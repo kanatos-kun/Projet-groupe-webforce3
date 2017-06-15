@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+<!-- 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/facebook_SDK.js"></script> -->
 	<title>Accueil - projet groupe webforce3</title>
 </head>
 <body>
@@ -29,10 +32,13 @@
 	  <form class="modal-content animate" action="action_inscription.php" method="POST">
 	    <div class="container">
 	      <label for="email"><b>Email</b></label>
-	      <input type="text" placeholder="Enter Email" name="email" required>
+	      <input type="mail" id="email" placeholder="Enter Email" name="email" required>
+
+	      <label for="email-repeat"><b>Repeat Email</b></label>
+	      <input type="mail" placeholder="Enter Email" name="email-repeat" required>
 
 	      <label for="psw"><b>Password</b></label>
-	      <input type="password" placeholder="Enter Password" name="psw" required>
+	      <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
 	      <label><b>Repeat Password</b></label>
 	      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -60,9 +66,6 @@
 
 	  <!-- Modal Content -->
 	  <form class="modal-content animate" action="action_connexion.php" method="POST">
-	    <div class="imgcontainer">
-	      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-	    </div>
 
 	    <div class="container">
 	      <label><b>Username</b></label>
@@ -84,5 +87,38 @@
 
 		</p>
 	</section>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 </body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1918502485085050',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+FB.login();
+</script>
 </html>
