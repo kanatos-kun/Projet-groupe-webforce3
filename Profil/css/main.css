@@ -1,0 +1,55 @@
+@import 'bootstrap.css';
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/*
+***********************************************************************************************
+
+											MENU
+
+***********************************************************************************************											
+*/
+nav {
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav1 {
+  background: #36BAF8;
+}
+
+.link1 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link1:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+
+/*
+***********************************************************************************************
+
+										Profil Content
+
+***********************************************************************************************											
+*/
+
+.profil{
+	background-color:#F7F7F9;
+	margin-top:25px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#EBEBEB;
+	border-radius:20px;
+}
+
+.paddingProfil{
+	padding-top:40px;
+	padding-left:30px;
+}
