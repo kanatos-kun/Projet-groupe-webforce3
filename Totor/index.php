@@ -10,16 +10,21 @@
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/facebook_SDK.js"></script> -->
 
-        <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/footer-distributed.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-
-
+          
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -31,12 +36,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <ul class="social-icons">
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-dribbble"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li>
-                            </ul>
+                           <h2>Le premier reseau social du web</h2>
                         </div> <!-- /.col-md-12 -->
                     </div> <!-- /.row -->
                 </div> <!-- /.container -->
@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="logo-wrapper col-md-2 col-sm-2">
                                     <h1>
-                                        <a href="#">Notresite</a>
+                                        <a href="#">Wolfo</a>
                                     </h1>
                                 </div> <!-- /.logo-wrapper -->
                                 <div class="col-md-10 col-sm-10 main-menu text-right">
@@ -65,32 +65,101 @@
                     </div> <!-- /.container -->
                 </div> <!-- /.main-header -->
             </div> <!-- /.site-header -->
+            <p></p>
+            <p></p>
+            <p></p>
+           
+             <div id="id01" class="modal id1">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content animate" action="action_inscription.php" method="POST">
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="mail" id="email" placeholder="Enter Email" name="email" required>
+
+          <label for="email-repeat"><b>Repeat Email</b></label>
+          <input type="mail" placeholder="Enter Email" name="email-repeat" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+          <label><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input type="checkbox" checked="checked"> Remember me
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div> 
+    
+    <!-- The Modal -->
+    <div id="id02" class="modal id2">
+      <span onclick="document.getElementById('id02').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="action_connexion.php" method="POST">
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn-2">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div> 
+ 
+
+
             <div class="site-slider">
                 <div class="slider">
                     <div class="flexslider">
+
                         <ul class="slides">
                             <li>
                                 <div class="overlay"></div>
                                 <img src="images/slide.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                      <a href="#" class="slider-btn">Inscription</a>
-                                      <p>Vous avez déjà un compte ? Connectez-vous</p>
+                                     <!-- The Modal (contains the Sign Up form) -->
+                                      <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+     <!-- Button to open the modal login form -->
+   
+
+                                      <button onclick="document.getElementById('id02').style.display='block'">Login</button>
+                                     
+ 
                                 </div>
                             </li>
                             <li>
                                 <div class="overlay"></div>
                                 <img src="images/slide4.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                     <a href="#" class="slider-btn">Inscription</a>
-                                     <p>Vous avez déjà un compte ? Connectez-vous</p>
+                                    <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+                                    <button onclick="document.getElementById('id02').style.display='block'">Login</button>
+                                    
+ 
                                 </div>
                             </li>
                             <li>
                                 <div class="overlay"></div>
                                 <img src="images/slide5.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                     <a href="#" class="slider-btn">Inscription</a>
-                                     <p>Vous avez déjà un compte ? Connectez-vous</p>
+                                     <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+                                     <button onclick="document.getElementById('id02').style.display='block'">Login</button>
+                                     
+ 
                                 </div>
                             </li>
                         </ul>
@@ -300,8 +369,12 @@
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                      <a href="#" class="slider-btn">Inscription</a>
-                      <p>Vous avez déjà un compte ? Connectez-vous</p>  
+                    <button onclick="document.getElementById('id01').style.display='block'">Sign up</button>
+                    <button onclick="document.getElementById('id02').style.display='block'">Login</button>
+                      
+
+
+
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
                 </div> <!-- /.container -->
@@ -347,12 +420,6 @@
 </div>
           
   
-        
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
+       
     </body>
 </html>
