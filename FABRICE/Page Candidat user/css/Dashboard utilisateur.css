@@ -34,7 +34,7 @@ nav {
 }
 .Accueil:hover {
   background-color: #ffffff;
-  color: #36BAF8;
+  color: coral;
   padding: 24px 10px;
 }
 .Projets {
@@ -47,7 +47,7 @@ nav {
 }
 .Projets:hover {
   background-color: #ffffff;
-  color: #36BAF8;
+  color: coral;
   padding: 24px 10px;
 }
 .Groupes {
@@ -60,7 +60,7 @@ nav {
 }
 .Groupes:hover {
   background-color: #ffffff;
-  color: #36BAF8;
+  color: coral;
   padding: 24px 10px;
 }
 .Formations {
@@ -73,7 +73,7 @@ nav {
 }
 .Formations:hover {
   background-color: #ffffff;
-  color: #36BAF8;
+  color: coral;
   padding: 24px 10px;
 }
 .Profil {
@@ -86,7 +86,7 @@ nav {
 }
 .Profil:hover {
   background-color: #ffffff;
-  color: #36BAF8;
+  color: coral;
   padding: 24px 10px;
 }
 
@@ -101,136 +101,333 @@ nav {
 }
 .Deconnexion:hover {
     background-color: #ffffff;
-    color: #36BAF8;
+    color: coral;
     padding: 24px 10px;
 }
-/*NAVBAR*/
+/*--- NAVBAR ---*/
 
-.bg-aqua
-{
-	width: 100%;
-	box-shadow: 3px 3px 10px rgba(0,0,0,1);
-
-}
-.bg-green
-{
-	width: 100%;
-	box-shadow: 3px 3px 10px rgba(0,0,0,1);
-}
-
-.bg-red
-{
-	width: 100%;
-	box-shadow: 3px 3px 10px rgba(0,0,0,1);
-}
-
-.bg-purple
-{
-	width: 100%;
-	box-shadow: 3px 3px 10px rgba(0,0,0,1);
-}
-
-.bg-purple>.minFooter
-{
-	background-color: deepskyblue;
-}
-
-.bg-purple>.deepskyblue
-{
-	color: deepskyblue;	
-}
-
-.UserImg
-{
-	box-shadow: 0px -10px 12px rgba(0,0,0,1);
-}
-
-/*FIL D'ACTU*/
+/*--- INFOSTATS ---*/
 .row1
 {
-    background-color: silver;
+    background-color: #E3E3E3;
     border-radius: 3px;
     margin-top: 30px;
     width: 100%;
     margin-left: 0px;
     padding-top: 20px;
 }
+.Box1
+{
+	width: 100%;
+	background-color: #1abc9c;
+}
 
+.Box1>.minFooter
+{
+  background-color: #ffffff;
+  color: #1abc9c;
+}
+
+.Box2
+{
+	width: 100%;
+	background-color: #e67e22;
+}
+
+.Box2>.minFooter
+{
+  background-color: #ffffff;
+  color: #e67e22;
+}
+
+.Box3
+{
+	width: 100%;
+	background-color: #3498db;
+}
+
+.Box3>.minFooter
+{
+  background-color: #ffffff;
+  color: #3498db;
+}
+
+.Box4
+{
+	width: 100%;
+	background-color: #2ecc71;
+}
+
+.Box4>.minFooter
+{
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+
+.UserImg
+{
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+/*--- INFOSTATS ---*/
+
+/*--- ACTUS ---*/
+  
 .row2
 {
-    position: relative;
-    background-color: silver;
+    background-color: #E3E3E3;
     border-radius: 3px;
     width: 100%;
     margin-top: 20px;
     margin-left: 0px;
 }
+  /*--- FIL D'ACTU ---*/
+  .direct-chat
+  {
+    background-color: #ffffff;
+    border: solid;
+    border-color: #36BAF8;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+    height: 500px;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .newsMess
+  {
+    background-color: #36BAF8;
+  }
+  /*--- FIL D'ACTU ---*/
 
-.row3
-{
-    position: relative;
-    background-color: silver;
+  /*--- SUGGESTION DE CONTACTS ---*/
+  .row3
+  {
+      background-color: #E3E3E3;
+      border-radius: 3px;
+      margin: 20px 20px;
+
+  }
+  .sugContact
+  {
+    background-color: #ffffff;
+    color: #36BAF8;
+    border-color: #36BAF8;
+    border: solid;
     border-radius: 3px;
-    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+
+  }
+  /*--- SUGGESTION DE CONTACTS ---*/
+  
+  /*--- DERNIERES OFFRES ---*/
+  .row4
+  {
+      border-radius: 3px;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 0px;
+  }
+  .newOffres
+  {
+    background-color: #ffffff;
+    color: #36BAF8;
+    border-radius: 3px;
+    border-color: #36BAF8;
+    border: solid;
     margin-top: 20px;
-    margin-left: 0px;
-}
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+
+  }
+  /*--- DERNIERES OFFRES ---*/
+/*--- ACTUS ---*/
 
 /*--- MAP LOCALISATOR ---*/
-.row4{
-    position: relative;
-    background-color: silver;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-left: 0px;
-}
+.row5{
 
-    .row5{
-        
-        background-color: silver;
-        border-radius: 3px;
-        padding: 20px 0 20px 0;
-        margin-top: 20px;
-        margin-left: 0px;
-    }
+    background-color: #E3E3E3;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
     .row6{
         
-        background-color: silver;
         border-radius: 3px;
+        width: 100%;
         padding: 20px 0 20px 0;
-        margin-top: 20px;
-        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 /*--- GOOGLE MAP ---*/
 #map{
 
     border-radius: 3px;
+    border: solid;
+    border-color: #36BAF8;
     box-shadow: 3px 3px 10px rgba(0,0,0,1);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
+    .row7
+    {
+        
+        border-radius: 3px;
+        padding: 20px 0 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 /*--- INFO UTILISATEUR ---*/
-#usersInfo{
+#usersInfo
+{
 
-  background-color: #36BAF8;
+  background-color: #ffffff;
+  border: solid;
+  border-color: #36BAF8;
   border-radius: 3px;
   box-shadow: 3px 3px 10px rgba(0,0,0,1);
-  color: #ffffff;  
+  color: #36BAF8;  
+  margin-top: 8px;
+}
+#recherche
+{
+  width: 300px;
+}
+/*--- INFO UTILISATEUR ---*/
+
+/*--- RECHERCHE UTILISATEUR ---*/
+#userSearch
+{
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: solid;
+  border-color:#36BAF8; 
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  color: #36BAF8;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.recherche
+{
+  width: 300px;
+
+}
+
+.SearchBouton
+{
+  margin-left: 280px;
+  background-color: #ffffff;
+  color: coral;
+}
+.SearchBouton:hover
+{
+  background-color: coral;
+  color: #ffffff;
 }
 /*--- RECHERCHE UTILISATEUR ---*/
-#userSearch{
-  background-color: #36BAF8;
+/*--- ROW 8 ---*/
+/*--- LAST MEMBERS ---*/
+.row8
+{
+  background-color: #E3E3E3;
   border-radius: 3px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
-  color: #ffffff;
+  width: 100%;
   margin-top: 20px;
+  margin-left: 0px;
 }
 
-.row7{
-  
-  
-   style="
-}
+    .LastMembers
+    {
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        border: solid;
+        border-color: #36BAF8;
+        box-shadow: 3px 3px 10px rgba(0,0,0,1);
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
+
+    .NewMembers
+    {
+      background-color: coral;
+    }
+
+    .box-footer
+    {
+      text-align: center;
+      width: 100%;
+    }
+/*--- AGENDA ---*/
+    .Calendar
+    {
+      border: solid;
+      border-color: #36BAF8;
+      box-shadow: 3px 3px 10px rgba(0,0,0,1);
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .BurggerMenu
+    {
+      background-color: coral;
+      color: #ffffff;
+    }
+
+    .BurggerMenu:hover
+    {
+      background-color: #ffffff;
+      color: coral;
+    }
+
+    #AddEvent
+    {
+      color: coral;
+    }
+
+    #AddEvent:hover
+    {
+      color: #ffffff;
+      background-color: coral;
+    }
+    
+    #ClearEvent
+    {
+      color: coral;
+    }
+
+    #ClearEvent:hover
+    {
+      color: #ffffff;
+      background-color: coral;
+    }
+
+    #ViewCalendar
+    {
+      color: coral;
+    }
+
+    #ViewCalendar:hover
+    {
+      color: #ffffff;
+      background-color: coral;
+    }
+/*--- AGENDA ---*/
+
+/*--- LAST MEMBERS ---*/
+
+/*--- ROW 11 ---*/
   .textarea{
       width: 100%;
       height: 125px;
@@ -239,6 +436,7 @@ nav {
       border: 1px solid rgb(221, 221, 221);
       padding: 10px; display: none;  
 }
+
 
 .wysihtml5-sandbox{
 
@@ -268,4 +466,80 @@ nav {
       width: 100%;
       height: 125px;
       
+}
+
+
+.row11{
+
+  background-color: #E3E3E3;
+  border-radius: 3px;
+  width: 100%;
+  margin: 20px 0 20px 0;   
+}
+/*--- MAILBOX ---*/
+.box-info
+{
+
+  color: #36BAF8;
+  background-color: #ffffff;
+  border: solid;
+  border-color: #36BAF8;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.box-header
+{
+  color: coral;
+}
+
+.box-body
+{
+  color: #36BAF8;
+}  
+
+#sendEmail
+{
+  background-color: #ffffff;
+  color: coral;
+}
+
+#sendEmail:hover
+{
+  background-color: coral;
+  color: #ffffff; 
+}
+/*--- MAILBOX ---*/
+
+/*--- LASTPROJECT ---*/
+.LastProj{
+
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: solid;
+  border-color: #36BAF8;
+  height: 426px;
+}
+/*--- LASTPROJECT ---*/
+
+/*--- ROW 11 ---*/
+
+/*--- FOOTER ---*/
+
+footer
+{
+  height: 60px;
+  color:#ffffff;
+  text-align: center;
+  background-color: #36BAF8;
+  font-weight: bold;
+}
+
+.ML
+{
+  color: coral;
+  font-style: bold;
 }
