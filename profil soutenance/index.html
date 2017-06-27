@@ -11,19 +11,6 @@
 
     </head>
     <body>
-        <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-                <meta charset="utf-8" />
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-                <link rel="stylesheet" href="css/main.css">
-                <script type="text/javascript" src="js/script.js"></script> 
-                <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-                <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    </head>
-    <body>
 
         <nav id="nav1">
              <a class="link1" href="#">Accueil</a>
@@ -32,30 +19,46 @@
              <a class="link1" href="file:///C:/Users/Etudiant/Desktop/Projet%20fin%20de%20soutenance/profile.html">Profil</a>
         </nav>
 
-		<div class="container wrap">
-		    <div class="row">
-		        <div class="col-xs-12 col-sm-6 col-md-12 card">
-	
-		                <div class="row card">
-		                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 profilePic">
-		                        <img src="img/hoovy.png" alt="" />
-		                    </div>
-		                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-		                        <h4>Patrick Sébastien</h4>
-		                        <p>Auxerre, France <i class="glyphicon glyphicon-map-marker"></i>
-		                        <p>
-		                            <i class="glyphicon glyphicon-envelope"></i>adressemail@random.net
-		                            <br />
-		                            <i class="glyphicon glyphicon-globe"></i><a href="https://www.prepbootstrap.com">www.prepbootstrap.com</a>
-		                            <br />
-		                            <i class="glyphicon glyphicon-gift"></i>January 19, 1993
-		                        </p>
-		                    </div>
-		                </div>
+        <div class="container wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-12">
+    
+                        <div class="row card">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 profilePic">
+                                <img src="img/hoovy.png" alt="" />
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 summary">
 
-		        </div>
-		    </div>
-		</div>
+                                <p><i class="fa fa-user-o" aria-hidden="true"></i> Christophe Roy<span><button type="button" class="btn btn-warning pull-right addContact" data-toggle="modal" data-target="#largeModal3">Ajouter un contact</button></span></p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Auxerre, France</p>
+                                <p><i class="fa fa-trophy" aria-hidden="true"></i> 20 ans<span><button type="button" class="btn btn-warning pull-right sendMessage">Envoyer un message</button></span></p>
+
+                                <div class="modal fade" id="largeModal3" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true"><!--Modal-->
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Ajouter un contact</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="form-group row">
+                                           <div class="col-md-12">
+                                                <p>Votre invitation a bien été envoyée.</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div><!--/Modal-->
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="container"><!-- container -->
             <div class="row"><!-- row -->
@@ -65,7 +68,7 @@
                         <div class="btn-group" role="group">
                             <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab">
                                 <div class="col-md-12">
-                                    Général
+                                    Informations générales
                                 </div>
                             </button>
                         </div>
@@ -87,43 +90,225 @@
                     </div>
                 </div>    
 
-                <div class="row">
+
                     <div class="tab-content">
 
-                        <div class="tab-pane fade in active col-md-12" id="tab1">
-                        <div class="cat1">
-                            <h3>Bio</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit.</p>
-                        </div> 
+                        <div class="tab-pane fade in active row" id="tab1">
+                            <h1>Informations générales</h1>
+                            <div class="col-md-12 cat">
+
+                                <h3>Bio<span>
+
+                                <a href="#" class="" data-toggle="modal" data-target="#largeModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                           
+                                
+                                </span></h3>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit.</p>
 
 
-                            <h3>Souhaits professionnels</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit.</p>
+          
 
-                            <h3>Contacts</h3>
-                            <p>Aperçu des contacts</p>
+                                <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true"><!--Modal-->
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Modifier votre Bio</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <h3>Bio</h3>
+                                        <div class="form-group row">
+                                           <div class="col-md-12">
+                                                <input class="form-control" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit." id="example-text-input">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div><!--/Modal-->
+
+
+                            </div> 
+
+                            <div class="col-md-12 cat skills">
+                                <h3>Compétences<span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></h3>
+                                <span class="label label-danger">HTML5</span>
+                                <span class="label label-primary">CSS3</span>
+                                <span class="label label-warning">Javascript</span>
+                                <span class="label label-info">jQuery</span>
+                                <span class="label label-info labelPhp">PHP</span>
+                            </div>    
+
+
+                            <div class="col-md-12 cat">
+                                <h3>Contacts</h3>
+                                <div class="row">    
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p1.jpg" alt="" />
+                                        <ul>
+                                            <li>Gobind Victor</li>
+                                            <li>Élève</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p2.jpg" alt="" />
+                                        <ul>
+                                            <li>Tatjana Stošija</li>
+                                            <li>Ancienne élève</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p3.jpg" alt="" />
+                                        <ul>
+                                            <li>Dan Lambert</li>
+                                            <li>Ancien élève</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p4.jpg" alt="" />
+                                        <ul>
+                                            <li>Teobaldo Caiazzo</li>
+                                            <li>Élève</li>
+                                        </ul>
+                                    </div>                                
+                                </div>
+
+                                <div class="row">    
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p5.jpg" alt="" />
+                                        <ul>
+                                            <li>Harvie Notoriano</li>
+                                            <li>Formateur</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p6.jpg" alt="" />
+                                        <ul>
+                                            <li>Svetopolk Jain</li>
+                                            <li>Entreprise</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p7.jpg" alt="" />
+                                        <ul>
+                                            <li>Aleksandr Andries</li>
+                                            <li>Élève</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p8.jpg" alt="" />
+                                        <ul>
+                                            <li>Roshan Lara</li>
+                                            <li>Entreprise</li>
+                                        </ul>
+                                    </div>                                
+                                </div>
+
+                                <div class="row">    
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p9.jpg" alt="" />
+                                        <ul>
+                                            <li>Grosvenor Giese</li>
+                                            <li>Entreprise</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p10.jpg" alt="" />
+                                        <ul>
+                                            <li>Herberto Thorne</li>
+                                            <li>Élève</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p11.jpg" alt="" />
+                                        <ul>
+                                            <li>Gero Järvi</li>
+                                            <li>Formateur</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 user">
+                                        <img class="userPic" src="img/p12.jpg" alt="" />
+                                        <ul>
+                                            <li>Alexis Hirsch</li>
+                                            <li>Entreprise</li>
+                                        </ul>
+                                    </div>                                
+                                </div>                                                        
+                          
+                            </div>
+
+
+
+                            <div class="col-md-12 cat">
+                                <h3>Souhaits professionnels<span><a href="#" class="" data-toggle="modal" data-target="#largeModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit.</p>
+
+                                <div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true"><!--Modal-->
+                                  <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Modifier vos souhaits professionnels</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <h3>Souhaits professionnels</h3>
+                                        <div class="form-group row">
+                                           <div class="col-md-12">
+                                                <input class="form-control" type="text" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus est, luctus id risus at, pulvinar euismod elit." id="example-text-input">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div><!--/Modal-->
+
+                            </div>
+
+
+
 
 
                         </div>
-                        <div class="tab-pane fade in" id="tab2">
-                            <h3>Me contacter</h3>
-                            <p>Adresse mail : </p>
-                            <p>Numéro de téléphone</p>
 
-                            <h3>Réseaux sociaux</h3>
-                            <p>Facebook</p>
-                            <p>Twitter</p>
-                            <p>Linkedin</p>
-                            <p>Google +</p>
-                        </div>
+                            <div class="tab-pane fade in" id="tab2">
+
+                                <div class="row">
+                                    <h1>Me contacter</h1>
+                                    <div class="col-md-12 cat">
+                                        <h3>Informations de contact</h3>
+                                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> exemple@gmail.com </p>
+                                        <p><i class="fa fa-phone" aria-hidden="true"></i> 07 42 15 36 97</p>
+                                    </div>
+                                    <div class="col-md-12 cat social">                                   
+                                            <h3>Réseaux sociaux</h3>
+                                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                         <div class="tab-pane fade in" id="tab3">
                           <h3>This is tab 3</h3>
                           <p>Test </p>
                         </div>
-                      </div>
+                    </div>
 
 
-            </div> <!-- /row -->
+
         </div><!-- /container -->
     </body>
 </html>
