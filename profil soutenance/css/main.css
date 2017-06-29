@@ -4,19 +4,42 @@
 body{
   background-color:#F5F5F5;
 }
+/*
+***********************************************************************************************
 
-.btn-primary, .btn-default{
-	background: rgba(0, 0, 0, 1);
-	color:white;
-	padding:20px;
-  border-style:solid;
-  border-color:white;
+                                        Onglets Profil
+
+***********************************************************************************************                     
+*/
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus
+{
+  background-color:#36BAF8;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+
+} 
+
+.nav-tabs > li > a{
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left:150px;
+  padding-right:150px;
+    text-align:center;
 }
 
-.btn-primary:hover,.btn-primary:focus, .btn-default:hover, .btn-default:focus{
-	background: rgba(0, 0, 0, 0.7);
-	color:white;
-  border-color:lightgrey;
+.nav > li > a:hover{
+  background-color:#36BAF8;
+}
+
+.nav-tabs .col-md-4{
+  padding-right:0px;
+  padding-left:0px;
 }
 
 #tab1 h1{
@@ -35,7 +58,13 @@ font-size:30px;
 
 }
 
+/*
+***********************************************************************************************
 
+                                        En-tête du profil
+
+***********************************************************************************************                     
+*/
 
 .card{
   margin-top:50px;
@@ -142,11 +171,17 @@ h3 span{
   margin-top:30px;
 }
 
-.social i{
+.fa-facebook-square, .fa-twitter-square,  .fa-linkedin-square,  .fa-google-plus-square{
   font-size:50px;
   margin-right:25px;
-}
+} 
+/*
+***********************************************************************************************
 
+                                      Icones FontAwesome
+
+***********************************************************************************************                     
+*/
 .fa-facebook-square{
   color:#3B5998;
 }
@@ -177,4 +212,9 @@ h3 span{
 
 #largeModal, #largeModal2{
   margin-top:250px;
+}
+
+
+.underline {
+text-decoration:underline;
 }
