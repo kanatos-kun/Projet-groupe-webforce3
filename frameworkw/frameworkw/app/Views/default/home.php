@@ -33,16 +33,16 @@
 <form class="modal-content animate" action="" method="POST">
 <div class="container">
          <label for="email"><b>Email</b></label>
-         <input type="mail" id="email" placeholder="Enter Email" name="email" required/>
+         <input type="mail" id="email" placeholder="Enter Email" name="reg-email" required/>
 
          <label for="email-repeat"><b>Repeat Email</b></label>
-         <input type="mail" placeholder="Enter Email" name="email-repeat" required/>
+         <input type="mail" placeholder="Enter Email" name="reg-email-repeat" required/>
 
          <label for="psw"><b>Password</b></label>
-         <input type="password" id="psw" placeholder="Enter Password" name="psw" required/>
+         <input type="password" id="psw" placeholder="Enter Password" name="reg-psw" required/>
 
          <label><b>Repeat Password</b></label>
-         <input type="password" placeholder="Repeat Password" name="psw-repeat" required/>
+         <input type="password" placeholder="Repeat Password" name="reg-psw-repeat" required/>
          <input type="checkbox" checked="checked"> Remember me
          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
@@ -50,7 +50,7 @@
          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
          <input type="submit" class="signupbtn" value="Sign Up"/>
             </div>
-            <div style='color:red'><?=$errSub?></div>
+            <div style='color:red'><?=$errReg?></div>
 </div>
 </form>
 </div>
@@ -61,17 +61,18 @@
 class="close" title="Close Modal">&times;</span>
 
 <!-- Modal Content -->
-<form class="modal-content animate" action="home" method="POST">
+<form class="modal-content animate" action="" method="POST">
 
 <div class="container">
 <label><b>Mail</b></label>
-<input type="text" placeholder="Enter Mail" name="co-mail" required/>
+<input type="text" placeholder="Enter Mail" name="log-email" required/>
 
 <label><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="co-psw" required/>
+<input type="password" placeholder="Enter Password" name="log-psw" required/>
 
 <button type="submit">Login</button>
 <input type="checkbox" checked="checked"/> Remember me
+<div style='color:red'><?=$errLog?></div>
 </div>
 
 <div class="container" style="background-color:#f1f1f1">

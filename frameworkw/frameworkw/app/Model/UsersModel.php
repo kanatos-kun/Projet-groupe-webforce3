@@ -15,10 +15,30 @@ class UsersModel extends \W\Model\UsersModel
 		return $this-> getUserByUsernameOrEmail($username);
 	}
 
+	public function getId($mail)
+	{
+		$this->setPrimaryKey('id');
+		return $this->search($mail)[0]['id'];
+	}
+
 	public function addUser($user)
 	{
 		$this->setPrimaryKey("id");
 		$this->insert($user);
+	}
+
+	public function addPsw($psw)
+	{
+		$this->setPrimaryKey("utilisateur_id");
+		$this->setTable("mot_de_passe");
+		$this->insert($psw);
+	}
+
+	public function getPswTable($id)
+	{
+		$this->setPrimaryKey("utilisateur_id");
+		$this->setTable("mot_de_passe");
+		return $this->search($id)[0];
 	}
 
 	public function hashPsw($psw)
@@ -37,7 +57,7 @@ class UsersModel extends \W\Model\UsersModel
 			$salt  = substr($salt,$passLenght,$passLenght);
 
 			$hashed = hash_pbkdf2('sha1', $psw, $salt, $I ,$length = 64 ,$raw_output = false);
-			$pkg = array( "hashed"    => $hashed ,
+			$pkg = array( "mot_de_passe"    => $hashed ,
 										"salt"      => $salt ,
 										"iteration" => $I ,
 										"longueur"  => $passLenght
