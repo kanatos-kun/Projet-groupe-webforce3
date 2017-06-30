@@ -1,0 +1,271 @@
+@import 'bootstrap.css';
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/*NAVBAR*/
+ul{
+    list-style-type: none;
+
+}
+
+li{
+  display: inline;
+}
+body {
+  margin: 0px;
+}
+nav {
+
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav1 {
+  background: #36BAF8;
+}
+
+.Accueil {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.Accueil:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+.Projets {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.Projets:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+.Groupes {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.Groupes:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+.Formations {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.Formations:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+.Profil {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.Profil:hover {
+  background-color: #ffffff;
+  color: #36BAF8;
+  padding: 24px 10px;
+}
+
+.Deconnexion{
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+    
+}
+.Deconnexion:hover {
+    background-color: #ffffff;
+    color: #36BAF8;
+    padding: 24px 10px;
+}
+/*NAVBAR*/
+
+.bg-aqua
+{
+	width: 100%;
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+
+}
+.bg-green
+{
+	width: 100%;
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+.bg-red
+{
+	width: 100%;
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+.bg-purple
+{
+	width: 100%;
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+.bg-purple>.minFooter
+{
+	background-color: deepskyblue;
+}
+
+.bg-purple>.deepskyblue
+{
+	color: deepskyblue;	
+}
+
+.UserImg
+{
+	box-shadow: 0px -10px 12px rgba(0,0,0,1);
+}
+
+/*FIL D'ACTU*/
+.row1
+{
+    background-color: silver;
+    border-radius: 3px;
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 20px;
+}
+
+.row2
+{
+    position: relative;
+    background-color: silver;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.row3
+{
+    position: relative;
+    background-color: silver;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+/*--- MAP LOCALISATOR ---*/
+.row4{
+    position: relative;
+    background-color: silver;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+    .row5{
+        
+        background-color: silver;
+        border-radius: 3px;
+        padding: 20px 0 20px 0;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .row6{
+        
+        background-color: silver;
+        border-radius: 3px;
+        padding: 20px 0 20px 0;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+/*--- GOOGLE MAP ---*/
+#map{
+
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+/*--- INFO UTILISATEUR ---*/
+#usersInfo{
+
+  background-color: #36BAF8;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  color: #ffffff;  
+}
+/*--- RECHERCHE UTILISATEUR ---*/
+#userSearch{
+  background-color: #36BAF8;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.row7{
+  
+  
+   style="
+}
+  .textarea{
+      width: 100%;
+      height: 125px;
+      font-size: 14px;
+      line-height: 18px;
+      border: 1px solid rgb(221, 221, 221);
+      padding: 10px; display: none;  
+}
+
+.wysihtml5-sandbox{
+
+      display: inline;
+      background-color: rgb(255, 255, 255);
+      border-collapse: separate;
+      border-color: rgb(221, 221, 221);
+      border-style: solid;
+      border-width: 1px;
+      clear: none;
+      float: none;
+      margin: 0px;
+      outline: 0px none rgb(51, 51, 51);
+      outline-offset: 0px;
+      padding: 10px;
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      z-index: auto;
+      vertical-align: text-bottom;
+      text-align: start;
+      box-sizing: border-box;
+      box-shadow: none;
+      border-radius: 0px;
+      width: 100%;
+      height: 125px;
+      
+}
