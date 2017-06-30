@@ -199,7 +199,48 @@
 							<button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
 							
 						</div>
-					</div><p>fjgdfkhgdfkgdkhgdkhdf</p><!-- /.box-header -->
+					</div><p>fjgdfkhgdfkgdkhgdkhdf</p>
+					<!-- /.box-header -->
+		
+<!-- CHATBOX -->
+				<div id="messages">
+        <?php
+        // on se connecte à notre base de données
+        try
+        {
+            $bdd = new PDO('mysql:host=localhost;dbname=tchat', 'root', '');
+        }
+        catch (Exception $e)
+        {
+            die('Erreur : ' . $e->getMessage());
+        }
+
+        // on récupère les 10 derniers messages postés
+        $requete = $bdd->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,10');
+
+        $SortArray;
+        while($donnees = $requete->fetch()){
+            // on affiche le message (l'id servira plus tard)
+            // echo "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
+            // echo "<pre>";
+            // print_r($donnees);
+            // echo "</pre>";
+        	$SortArray[] = "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
+        }
+
+        for($i=(count($SortArray)-1);$i>=0;$i--){
+        	echo $SortArray[$i];
+        }
+
+        $requete->closeCursor();
+        ?>
+        </div>
+	    <form method="POST" action="404.php">
+	        Pseudo : <input class="form-control" name="pseudo" id="pseudo" type="text"/><br/>
+	        Message : <textarea name="message" class="form-control" id="message"></textarea><br/>
+	        <input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
+	    </form>
+<!-- CHATBOX -->
 				</div>
 			</div>
 		</div>

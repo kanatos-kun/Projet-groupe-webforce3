@@ -237,6 +237,14 @@ nav {
   {
     background-color: #36BAF8;
   }
+    /*--- CHATBOX ---*/
+    #messages
+    {
+      height: 200px;
+      overflow: scroll;
+    }    
+    /*--- CHATBOX ---*/
+
   /*--- FIL D'ACTU ---*/
 
   /*--- SUGGESTION DE CONTACTS ---*/

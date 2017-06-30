@@ -42,8 +42,7 @@
 	<!-- AdminLTE for demo purposes -->
 	<script src="js/demo.js"></script>
 	<script src="js/Dashboard utilisateur.js"></script>
-	<script src="js/news.js"></script>
-
+	
 </head>
 <body>
 
@@ -71,8 +70,8 @@
 		<div class="navbar-custom-menu user-menu">
 			<ul class="nav navbar-nav">
 				<!-- User Account: style can be found in dropdown.less -->
-				<li class="dropdown user user-menu open">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+				<li class="dropdown user user-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<img src="img/img1.jpg" class="user-image" alt="User Image">
 						<span class="hidden-xs">Alexander Pierce</span>
 					</a>
@@ -190,19 +189,58 @@
 
 			<div class="row3">
 				<div class="box direct-chat">
+
+				
 					<div class="box-header">
 						<h3 class="box-title">Fil d'actualité</h3>
 						<div class="box-tools pull-right">
-							<span data-toggle="tooltip" title="3 New Messages" class="badge newsMess">3</span>
-							
-							<!-- In box-tools add this button if you intend to use the contacts pane -->
-							<button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-							
 						</div>
-					</div><p>fjgdfkhgdfkgdkhgdkhdf</p><!-- /.box-header -->
-				</div>
-			</div>
+					</div>
+					<!-- /.box-header -->
+		
+<!-- CHATBOX -->
+		<!-- Intégrer overflow: scroll dans le css -->
+		<div id="messages">
+			<?php
+// on se connecte à notre base de données
+			try
+			{
+				$bdd = new PDO('mysql:host=localhost;dbname=tchat', 'root', '');
+			}
+			catch (Exception $e)
+			{
+				die('Erreur : ' . $e->getMessage());
+			}
+
+// on récupère les 10 derniers messages postés
+			$requete = $bdd->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,10');
+
+			$SortArray;
+			while($donnees = $requete->fetch()){
+// on affiche le message (l'id servira plus tard)
+// echo "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
+// echo "<pre>";
+// print_r($donnees);
+// echo "</pre>";
+				$SortArray[] = "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
+			}
+
+			for($i=(count($SortArray)-1);$i>=0;$i--){
+				echo "<img style='display:inline;width:40px;height:40px' src='img/Logo3.jpg'/>".$SortArray[$i];
+			}
+
+			$requete->closeCursor();
+			?>
 		</div>
+		<form method="POST" action="#">
+			Pseudo : <input class="form-control" name="pseudo" id="pseudo" type="text"/><br/>
+			Message : <textarea name="message" class="form-control" id="message"></textarea><br/>
+			<input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
+		</form>
+		<!-- CHATBOX -->
+	</div>
+</div>
+</div>
 			<!-- FIL D'ACTU -->
 		
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
