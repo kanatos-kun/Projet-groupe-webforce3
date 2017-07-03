@@ -42,6 +42,11 @@ body{
   padding-left:0px;
 }
 
+.nav{
+  margin-bottom:50px;
+}
+
+
 #tab1 h1, #tab2 h1, #tab3 h1{
 margin-bottom:40px;
 border-bottom-style:solid;
@@ -64,8 +69,7 @@ font-size:30px;
   padding-top:50px;
   padding-bottom:50px;
   border-style:solid;
-  border-radius:10px;
-  border-color:#CDCDCD;
+  border-color:#E2E2E2;
   border-width:1px;
   font-size:20px;
   background-color:white;
@@ -80,13 +84,12 @@ font-size:30px;
 }
 
 .cat{
-
-  border-radius:10px;
   border-style:solid;
-  border-color:#CDCDCD;
+  border-color:#E2E2E2;
   border-width:1px;
   background-color:white;
-  margin-bottom:40px;
+  margin-top:4px;
+  margin-bottom:4px;
 }
 
 .skills{
@@ -233,10 +236,13 @@ text-decoration:underline;
 */
 
 .projet{
-  margin-bottom:20px;
-  padding-top:25px;
-  padding-bottom:25px;
+margin-top:40px;
+padding-top:25px;
+padding-bottom:25px;
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
+
 
 
 
