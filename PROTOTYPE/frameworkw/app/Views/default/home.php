@@ -1,6 +1,14 @@
+<!--********************************************************************
+                   integrer les assets
+*********************************************************************-->
+<?php $json  = file_get_contents("json/home.json",true)?>
+<?php $asset = json_decode($json,true)?>
+
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main-header') ?>
+<?php if(json_last_error_msg()!="No error") echo json_last_error_msg()?>
+
 <div class="container">
     <div id="menu-wrapper">
         <div class="row">
@@ -378,6 +386,9 @@ class="close" title="Close Modal">&times;</span>
 
 <?php $this->stop('footer2')?>
 
+<!--********************************************************************
+                   Gestion des fichiers JS et CSS
+*********************************************************************-->
 <?php $this->start('css') ?>
 <?php foreach($asset["css"] as $index => $value)
   {?>
@@ -394,9 +405,6 @@ class="close" title="Close Modal">&times;</span>
     ?>'/>
   <?php } ?>
 
-<!--********************************************************************
-                   Gestion des fichiers JS et CSS
-*********************************************************************-->
 <?php $this->stop('css') ?>
 
 <?php $this->start('js')?>
