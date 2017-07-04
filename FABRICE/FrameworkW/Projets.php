@@ -115,69 +115,7 @@
 
 <!-- NAVBAR -->
 <div class="container-fluid">
-<!-- SECTION 1 -->
-	<section class="row row1">
-		<!-- Info boxes -->
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="small-box Box1">
-				<div class="inner">
-					<h3>150</h3>
 
-					<p>Contacts</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-bag"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<!-- small box -->
-			<div class="small-box Box2">
-				<div class="inner">
-					<h3>53<sup style="font-size: 20px">%</sup></h3>
-
-					<p>Projets</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-stats-bars"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="small-box Box3">
-				<div class="inner">
-					<h3>65</h3>
-
-					<p>Dernières visites</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-pie-graph"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<!-- small box -->
-			<div class="small-box Box4">
-				<div class="inner">
-					<h3>53<sup style="font-size: 20px">%</sup></h3>
-
-					<p>Intérêt</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-stats-bars"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-	</section>
-<!-- SECTION 1 -->
 
 </body>
 

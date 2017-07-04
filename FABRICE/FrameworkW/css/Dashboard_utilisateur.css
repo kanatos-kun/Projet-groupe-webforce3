@@ -24,6 +24,8 @@ li{
   display: inline;
 }
 body {
+  
+  background-color: #E3E3E3;
   margin: 0px;
 }
 nav {
@@ -156,7 +158,6 @@ text-align: center;
 /*--- INFOSTATS ---*/
 .row1
 {
-    background-color: #E3E3E3;
     border-radius: 3px;
     margin-top: 30px;
     width: 100%;
@@ -221,7 +222,6 @@ text-align: center;
   
 .row2
 {
-    background-color: #E3E3E3;
     border-radius: 3px;
     width: 100%;
     margin-top: 20px;
@@ -233,7 +233,6 @@ text-align: center;
     background-color: #ffffff;
     border: solid;
     border-color: #36BAF8;
-    box-shadow: 3px 3px 10px rgba(0,0,0,1);
     height: 500px;
     width: 100%;
     border-radius: 3px;
@@ -250,13 +249,14 @@ text-align: center;
 
     #messages
     {
-      height: 225px;
+      height: 300px;
       overflow: scroll;
       
     } 
 
     #liveChat
     {
+      
       height: 50px;
     }
 
@@ -291,7 +291,6 @@ text-align: center;
   /*--- SUGGESTION DE CONTACTS ---*/
   .row3
   {
-      background-color: #E3E3E3;
       border-radius: 3px;
       margin: 20px 20px;
 
@@ -303,7 +302,6 @@ text-align: center;
     border-color: #36BAF8;
     border: solid;
     border-radius: 3px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,1);
 
   }
 
@@ -330,7 +328,6 @@ text-align: center;
     border-color: #36BAF8;
     border: solid;
     margin-top: 20px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,1);
   }
 
   .rdOffers
@@ -344,7 +341,6 @@ text-align: center;
 /*--- MAP LOCALISATOR ---*/
 .row5{
 
-    background-color: #E3E3E3;
     border-radius: 3px;
     width: 100%;
     margin-top: 20px;
@@ -367,7 +363,6 @@ text-align: center;
     border-radius: 3px;
     border: solid;
     border-color: #36BAF8;
-    box-shadow: 3px 3px 10px rgba(0,0,0,1);
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -390,7 +385,6 @@ text-align: center;
   border: solid;
   border-color: #36BAF8;
   border-radius: 3px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
   color: #36BAF8;  
   margin-top: 8px;
 }
@@ -407,7 +401,6 @@ text-align: center;
   border-radius: 3px;
   border: solid;
   border-color:#36BAF8; 
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
   color: #36BAF8;
   margin-top: 20px;
   margin-left: auto;
@@ -439,7 +432,6 @@ text-align: center;
 /*--- LAST MEMBERS ---*/
 .row8
 {
-  background-color: #E3E3E3;
   border-radius: 3px;
   width: 100%;
   margin-top: 20px;
@@ -452,7 +444,6 @@ text-align: center;
         border-radius: 3px;
         border: solid;
         border-color: #36BAF8;
-        box-shadow: 3px 3px 10px rgba(0,0,0,1);
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -621,7 +612,6 @@ text-align: center;
     {
       border: solid;
       border-color: #36BAF8;
-      box-shadow: 3px 3px 10px rgba(0,0,0,1);
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
@@ -725,7 +715,6 @@ text-align: center;
 
 .row11{
 
-  background-color: #E3E3E3;
   border-radius: 3px;
   width: 100%;
   margin: 20px 0 20px 0;   
@@ -739,7 +728,6 @@ text-align: center;
   border: solid;
   border-color: #36BAF8;
   border-radius: 3px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
   color: #ffffff;
   margin-top: 20px;
 }
@@ -770,7 +758,6 @@ text-align: center;
 /*--- LASTPROJECT ---*/
 .LastProj
 {
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
   margin-top: 20px;
   background-color: #ffffff;
   border: solid;

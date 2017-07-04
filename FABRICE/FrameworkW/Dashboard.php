@@ -63,10 +63,10 @@
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul>
-				<li><a class="Accueil" href="#">Accueil</a></li>
-				<li><a class="Projets" href="Projets.html">Projets</a></li>
-				<li><a class="Formations" href="Formations.html">Formations</a></li>
-				<li><a class="Profil" href="profile.html">Profil</a></li>
+				<li><a class="Accueil" href="Dashboard.php">Accueil</a></li>
+				<li><a class="Projets" href="Projets.php">Projets</a></li>
+				<li><a class="Formations" href="Formations.php">Formations</a></li>
+				<li><a class="Profil" href="profil.php">Profil</a></li>
 			</ul>	
 		</div>
 
@@ -119,123 +119,36 @@
 
 <!-- NAVBAR
 <div class="container-fluid">
-<!-- SECTION 1 -->
-	<section class="row row1">
-		<!-- Info boxes -->
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="small-box Box1">
-				<div class="inner">
-					<h3>150</h3>
 
-					<p>Contacts</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-bag"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<!-- small box -->
-			<div class="small-box Box2">
-				<div class="inner">
-					<h3>53<sup style="font-size: 20px"></sup></h3>
-
-					<p>Contacts Pro</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-stats-bars"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="small-box Box3">
-				<div class="inner">
-					<h3>480</h3>
-
-					<p>Nombre de visites</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-pie-graph"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<!-- small box -->
-			<div class="small-box Box4">
-				<div class="inner">
-					<h3>3<sup style="font-size: 20px"></sup></h3>
-
-					<p>Projets en cours</p>
-				</div>
-				<div class="icon">
-					<i class="ion ion-stats-bars"></i>
-				</div>
-				<a href="#" class="small-box-footer minFooter">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-			</div>
-		</div>
-
-	</section>
-<!-- SECTION 1 -->
 
 <!-- SECTION 2 -->
 	<section class="row row2">
 		<!-- FIL D'ACTU -->
-		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+		<div class="col-xs-12 col-md-10">
 
 			<div class="row3">
 				<div class="box direct-chat col-xs-12">
 
-				
+
 					<div class="box-header">
 						<h3 class="box-title">Fil d'actualité</h3>
 						<div class="box-tools pull-right">
 						</div>
 					</div>
 					<!-- /.box-header -->
-		
-<!-- CHATBOX -->
-		<!-- Intégrer overflow: scroll dans le css -->
-		<div id="messages">
-			<?php
-// on se connecte à notre base de données
-			try
-			{
-				$bdd = new PDO('mysql:host=localhost;dbname=tchat', 'root', '');
-			}
-			catch (Exception $e)
-			{
-				die('Erreur : ' . $e->getMessage());
-			}
 
-// on récupère les 10 derniers messages postés
-			$requete = $bdd->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,10');
+					<!-- CHATBOX -->
+					<!-- Intégrer overflow: scroll dans le css -->
+					<div id="messages">
 
-			$SortArray;
-			while($donnees = $requete->fetch()){
-// on affiche le message (l'id servira plus tard)
-// echo "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
-// echo "<pre>";
-// print_r($donnees);
-// echo "</pre>";
-				$SortArray[] = "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . " dit : " . $donnees['message'] . "</p>";
-			}
+						<?php
+						include_once('chat_init.php');
+						?>
 
-			for($i=(count($SortArray)-1);$i>=0;$i--){
-				echo "<img style='display:inline;width:40px;height:40px' src='img/Logo3.jpg'/>".$SortArray[$i];
-			}
-
-			$requete->closeCursor();
-			?>
-		</div>
-		<form method="POST" action="#">
-			Pseudo : 
-			<input class="form-control chatPseudo" name="pseudo" id="pseudo" type="text"/><br/>
+					</div>
+					<form method="POST" action="#">
+			<!-- Pseudo : 
+			<input class="form-control chatPseudo" name="pseudo" id="pseudo" type="text"/> --><br/>
 			Message : 
 			<textarea name="message" class="form-control" id="liveChat"></textarea><br/>
 			<input class="col-centered" type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
@@ -246,7 +159,7 @@
 </div>
 			<!-- FIL D'ACTU -->
 		
-		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-md-2">
 			<div class="row row4">
 				<!-- SUGGESTION DE CONTACTS -->
 				<div class="col-xs-12 sugContact">
@@ -254,37 +167,20 @@
 						<h3 class="box-title">Suggestion de contacts</h3>
 					</div>
 					<div class="row rdOffers">
-						<div class="col-xs-12 col-md-4">
+						<div class="col-xs-12">
 							<a href=""><img src="img/128x128.jpg"/><p>jnhgfdsqfg</p></a>
 						</div>
-						<div class="col-xs-12 col-md-4">	
+						<div class="col-xs-12">	
 							<a href=""><img src="img/128x128.jpg"/><p>kjuhgfrd</p></a>
 						</div>
-						<div class="col-xs-12 col-md-4">
+						<div class="col-xs-12">
 							<a href=""><img src="img/128x128.jpg"/><p>rtgyhjjuhygfd</p></a>
 						</div>
 					</div>
 				</div>
 				<!-- SUGGESTION DE CONTACTS -->
 
-				<!-- DERNIERES OFFRES -->
-				<div class="col-xs-12 newOffres">
-					<div class="box-header">
-						<h3 class="box-title">Dernières Offres</h3>
-					</div>
-					<div class="row rdContact">
-						<div class="col-xs-12 col-md-4">
-							<a href=""><img src="img/128x128.jpg"/><p>jnhgfdsqfg</p></a>
-						</div>
-						<div class="col-xs-12 col-md-4">	
-							<a href=""><img src="img/128x128.jpg"/><p>kjuhgfrd</p></a>
-						</div>
-						<div class="col-xs-12 col-md-4">
-							<a href=""><img src="img/128x128.jpg"/><p>rtgyhjjuhygfd</p></a>
-						</div>
-					</div>
-				</div>
-				<!-- DERNIERES OFFRES -->
+				
 			</div>
 		
 		</div>
@@ -297,7 +193,7 @@
 		
 		<div class="col-xs-12 col-sm-12 col-md-7">
 			<div class="row row6">
-				<div class="col-xs-12" id="">
+				<div class="col-xs-12">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10720.859667953773!2d3.5881564999999997!3d47.7966695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1498051283360" width="800" height="400" frameborder="0" allowfullscreen id="map"></iframe>
 
 				</div>
