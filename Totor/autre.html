@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html >
+
 <head>
-  <meta charset="UTF-8">
-  <title>Page d'accueil non connecté</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="utf-8">
+    <title>Page d'accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
 
@@ -21,17 +16,14 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
-  
+
+    
+
+
+
 </head>
-
 <body>
-  <div class="container">
- 
- <!-- - -  - - - - - - - - - - - - SCROLL PART 1 -->
 
-  <section class="background">
-    <div class="content-wrapper">
-     
          <!-- La navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -46,12 +38,12 @@
     
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <!-- Logo navbar coté gauche -->
-      <a class="navbar-brand" href="/">Wolfo</a>
+      <a class="navbar-brand" href="#">Wolfo</a>
          <ul class="nav navbar-nav navbar-right">
          <!-- Menus navabr coté droit -->
-           <li><a href="/">Accueil</a></li>
-           <li><a href="/">Premium</a></li>
-           <li><a href="/">A propos</a></li>
+           <li><a href="#">Accueil</a></li>
+           <li><a href="#">Premium</a></li>
+           <li><a href="#">A propos</a></li>
            <button onclick="document.getElementById('id02').style.display='block'">Connexion</button>
          </ul>
       </div><!-- /.navbar-collapse -->
@@ -112,8 +104,8 @@
   </form>
 </div> 
 
-        
-          <!-- -LE SLIDER- -->
+                
+                <!-- -LE SLIDER- -->
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -158,52 +150,59 @@
          </div><!-- /.carousel-inner -->
 </div><!-- /.carousel slide -->
 
+<br>
+<br>
+<br>
 
-    </div>
-  </section>
 
-             <!-- - -  - - - - - - - - - - - - SCROLL PART 2 -->
 
-  <section class="background">
-    <div class="content-wrapper">
-    <!-- SECTION 1 -->
-     <section class="section1 section " id="section1">
+         <!-- SECTION 1-->
+
+<div id="main">
+
+<section class="section1 section " id="section1">
     <div class="container">
+        <div class="row">
         <!-- titre de la section -->
-            <div class="heading-section col-xs-12 col-md-12  text-center">
+            <div class="heading-section col-md-12 text-center">
                 <h2>Notre futur appli mobile bientôt dans votre poche !</h2>
             </div> <!-- /.heading-section -->
+        </div> <!-- /.row -->
         <div class="row">
-        
-            <!-- Première image de la section -->
-            <div class=" col-xs-12 col-md-6 ">
-                <img width="50%" src="images/tab.jpg" alt="image pub">
-            </div> <!-- /.col-md-6 -->
+        <!-- Colonne vide -->
 
-              <!-- Deuxième image de la section -->
-            <div class=" col-xs-12 col-md-6 ">
-                <img width="30%" src="images/smt.jpg" alt="image pub">
-            </div> <!-- /.col-md-6 -->
+            <div class="col-md-2 col-sm-6">
+            </div> <!-- /.col-md-2 -->
+            
+            <!-- Image principale de la section -->
+            <div class="col-md-8 col-sm-6">
+                <img src="images/tt.jpg" alt="image pub">
+            </div> <!-- /.col-md-8 -->
 
+            <!-- Colonne vide -->
+            <div class="col-md-2 col-sm-6">
+            </div> <!-- /.col-md-2 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section> <!-- /#pub-appli-->
 
 
-            <!-- SECTION 2 -->
+
+              <!-- SECTION 2 -->
+
+
 <section class=" section2 section " id="services">
     <div class="container">
         <div class="row">
         <!-- Titre de la section -->
-            <div class="heading-section col-xs-12 col-md-12  text-center">
+            <div class="heading-section col-md-12 text-center">
                 <h2>Nos services</h2>
 
             </div> <!-- /.heading-section -->
         </div> <!-- /.row -->
                 <div class="row">
-                
                             <!-- Premier service -->
-                            <div class=" col-xs-12 col-md-3 ">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="service-item" id="service-1">
                                     <div class="service-icon">
                                         <i class="fa fa-file-code-o"></i>
@@ -218,7 +217,7 @@
                             </div> <!-- /.col-md-3 -->
                                
                                <!-- Deuxième service -->
-                            <div class=" col-xs-12 col-md-3 ">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="service-item" id="service-2">
                                     <div class="service-icon">
                                         <i class="fa fa-paper-plane-o"></i>
@@ -233,7 +232,7 @@
                            </div> <!-- /.col-md-3 -->
                               
                               <!-- troisième service -->
-                           <div class=" col-xs-12 col-md-3 ">
+                           <div class="col-md-3 col-sm-6">
                             <div class="service-item" id="service-3">
                                 <div class="service-icon">
                                     <i class="fa fa-institution"></i>
@@ -248,7 +247,7 @@
                        </div> <!-- /.col-md-3 -->
                          
                          <!-- Quatrième service -->
-                    <div class=" col-xs-12 col-md-3 ">
+                    <div class="col-md-3 col-sm-6">
                         <div class="service-item" id="service-4">
                             <div class="service-icon">
                                 <i class="fa fa-flask"></i>
@@ -266,22 +265,15 @@
 </section> <!-- /#services -->
 
 
-    </div>
-  </section>
 
-<!-- - -  - - - - - - - - - - - - SCROLL PART 3 -->
+                 <!-- SECTION 3 -->
 
-  <section class="background">
-    <div class="content-wrapper">
 
-    
-                       <!-- SECTION 3 -->
-
-    <section class="section3 section" id="portfolio">
+<section class="section3 section" id="portfolio">
     <div class="container">
             <div class="row">
         <!-- Titre de la section 3 -->
-               <div class="heading-section col-md-12 col-sm-6 text-center">
+               <div class="heading-section col-md-12 text-center">
                 <h2>Nos derniers membres</h2>
 
                </div> <!-- /.heading-section -->
@@ -289,13 +281,13 @@
         <div class="row">
 
             <!-- Colonne vide -->
-                <div class="col-md-5">
+                <div class="col-md-3">
                 </div> <!-- /.col-md-3 -->
 
                 <!-- Photo de profil du membre 1 -->
-                <div class="portfolio-item col-xs-12 col-md-2 ">
+                <div class="portfolio-item col-md-2 col-sm-6">
                     <div class="portfolio-thumb">
-                        <img  src="images/d.jpg" alt="Membre 1">
+                        <img src="images/d.jpg" alt="Membre 1">
                         <div class="portfolio-overlay">
                             <h3>Jean didier</h3>
 
@@ -304,7 +296,7 @@
                 </div> <!-- /.portfolio-item -->
 
                 <!-- Photo de profil du membre 2 -->
-                <div class="portfolio-item col-xs-12 col-md-2 ">
+                <div class="portfolio-item col-md-2 col-sm-6">
                     <div class="portfolio-thumb">
                         <img src="images/d.jpg" alt="Membre 2">
                         <div class="portfolio-overlay">
@@ -316,7 +308,7 @@
                 </div> <!-- /.portfolio-item -->
 
                  <!-- Photo de profil du membre 3 -->
-                <div class="portfolio-item col-xs-12 col-md-2 ">
+                <div class="portfolio-item col-md-2 col-sm-6">
                     <div class="portfolio-thumb">
                         <img src="images/d.jpg" alt="Membre 3">
                         <div class="portfolio-overlay">
@@ -325,7 +317,10 @@
                     </div> <!-- /.portfolio-thumb -->
                 </div> <!-- /.portfolio-item -->
                  
-          
+                
+            <!-- Colonne vide -->
+            <div class="col-md-3">
+            </div> <!-- /.col-md-3 -->
 
         </div> <!-- /.row -->
 
@@ -333,14 +328,16 @@
 </section> <!-- /#portfolio -->
 
 
-                               <!-- SECTION 4 -->
 
+
+                 <!-- SECTION 4-->
+    
 
 <section class="section4 section">
     <div class="container" id="pub">
         <div class="row">
         <!-- Titre de la section 4 -->
-            <div class="heading-section col-xs-12 col-md-12  text-center">
+            <div class="heading-section col-md-12 text-center">
                  <h2>Devenez acteur de votre vie en nous  rejoignant </h2>
                  <br>
                  <br>
@@ -352,11 +349,9 @@
     </div> <!-- /.container -->
 </section>  <!-- /.pub-->
 
+</div>
 
-
-                       <!-- FOOTER-->
-
-
+<!-- FOOTER-->
           
       <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 <!--Debut du footer-->
@@ -416,16 +411,7 @@
     </div>
   </div>
 </div>
-    
-    </div>
-  </section>
 
-</div> <!-- /.container -->
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
-<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-
-    <script src="js/index.js"></script>
-
+  
 </body>
 </html>

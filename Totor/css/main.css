@@ -20,6 +20,7 @@ html {
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
+  max-width: 100%;
 
 }
 
@@ -32,11 +33,12 @@ img {
 
 
 .content-wrapper{
-  background-image: url("../images/ba8.jpg");
+ 
+  max-width: 100%;
 }
 
 .container {
-    width: 1453px;
+  
     margin-left: -16px;
 }
 
@@ -69,7 +71,7 @@ img {
     border-color: #e7e7e7;
     padding-bottom: -4px;
     margin-bottom: 0px;
-    margin-top: -16px;
+    margin-top: 4px;
 }
 
 .navbar-default .navbar-brand {
@@ -90,7 +92,7 @@ body {
   font-size: .83em;
   line-height: 1.75;
   color: #666666;
- background-image: url("../images/ba5.jpg");
+
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -128,6 +130,7 @@ textarea:focus {
   border-color: #666666;
 }
 
+/*Couleur bouton navbar*/
 .navbar-right button{
   background-color: coral;
 }
@@ -136,20 +139,21 @@ textarea:focus {
 /*SECTION 1*/
 
 .section1 {
-  margin-top: -102px;
-  padding-top: 60px;
+ 
   background-color: white;
 
 }
 
-.section1 h2{
-  margin-left: 487px;
-}
+/*titre section 1*/
 
+
+/*Mise en forme des deux images section 1*/
 .section1 img{
-  margin-left: 399px;
-  height: auto;
-  max-width: 100%;
+  
+ height: auto; 
+  width: auto; 
+    max-width: 300px; 
+    max-height: 600px;
 }
 
 /*----*/
@@ -157,13 +161,12 @@ textarea:focus {
 /*SECTION 2*/
 
 .section2 {
-  margin-top: -3px;
-  padding-top: 60px;
+  
    background-image: url(../images/ba2.jpg);
-   padding-left: 242px;
-
+ 
 }
 
+/*Titre section 2*/
 .section2 h2 {
   color: white;
    margin-left: 33px;
@@ -176,13 +179,23 @@ textarea:focus {
 
 .section3 {
   
-   background-image: url(../images/ba1.jpg);
+  
+  
  }
 
 
 .section3 h2{
   color: white;
-   margin-left: 487px;
+   margin-left: 8px;
+}
+
+.section3 img{
+  
+  height: auto; 
+  width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+
 }
 
 
@@ -193,23 +206,24 @@ textarea:focus {
 /*SECTION 4*/
 
 .section4 {
-  margin-top: -3px;
-  padding-top: 60px;
+ 
  background-color: #36BAF8;
   
 }
 
 
+/*Titre section 4*/
 .section4 h2 {
  color: white;
- margin-left: 487px;
+
 }
 
 
+/*Bouton section 4*/
 .section4 button {
  color:  #36BAF8;
  background-color:  #F4FEFE; 
- margin-left: 487px;
+
 }
 
 /*----*/
@@ -324,7 +338,7 @@ footer li{
 }
 
 
-/*SECTION 3*/
+/*SECTION 3 Mise en forme images membres*/
 
 
 .portfolio-item {
@@ -338,21 +352,24 @@ footer li{
   width: 100%;
 }
 .portfolio-item .portfolio-thumb .portfolio-overlay {
-  background-color: #36BAF8;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 25px;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+     background-color:  #e67e22;
+    position: absolute;
+    width: 34%;
+    height: 95%;
+    top: 0;
+    left: 151px;
+    padding: 37px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    margin-right: 201px;
+    padding-right: -14px;
 }
+
 .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
   font-size: 18px;
   text-transform: uppercase;
@@ -415,9 +432,7 @@ input[type=text], input[type=password] {
 }
 
 /* Add padding to container elements */
-.container {
-    padding: 16px;
-}
+
 
 .container label{
   color: black;
@@ -524,7 +539,7 @@ footer { background-color:white; min-height:210px; font-family: 'Open Sans', san
 .footer-ul i { margin-right:10px;}
 .footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
 
- .copyright { min-height:40px; background-color: silver;}
+ .copyright { min-height:40px; background-color: silver; margin-bottom: -63px;}
  .copyright p { text-align:left; color:white; padding:10px 0; margin-bottom:0;}
  .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;margin-left: 92px;}
  .post p { font-size:12px; color:#FFF; line-height:20px;}

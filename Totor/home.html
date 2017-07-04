@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-
+<html >
 <head>
-    <meta charset="utf-8">
-    <title>Page d'accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page d'accueil non connecté</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
 
@@ -16,14 +22,17 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
-
-    
-
-
-
+  
 </head>
-<body>
 
+<body>
+  <div class="container">
+ 
+ <!-- - -  - - - - - - - - - - - - SCROLL PART 1 -->
+
+  <section class="background">
+    <div class="content-wrapper">
+     
          <!-- La navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -38,12 +47,12 @@
     
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <!-- Logo navbar coté gauche -->
-      <a class="navbar-brand" href="#">Wolfo</a>
+      <a class="navbar-brand" href="/">Wolfo</a>
          <ul class="nav navbar-nav navbar-right">
          <!-- Menus navabr coté droit -->
-           <li><a href="#">Accueil</a></li>
-           <li><a href="#">Premium</a></li>
-           <li><a href="#">A propos</a></li>
+           <li><a href="/">Accueil</a></li>
+           <li><a href="/">Premium</a></li>
+           <li><a href="/">A propos</a></li>
            <button onclick="document.getElementById('id02').style.display='block'">Connexion</button>
          </ul>
       </div><!-- /.navbar-collapse -->
@@ -104,8 +113,12 @@
   </form>
 </div> 
 
-                
-                <!-- -LE SLIDER- -->
+
+  <div class="inscription1 " id="inscription1">
+                           <button onclick="document.getElementById('id01').style.display='block'">Inscrivez-vous !</button>
+                           </div>
+        
+          <!-- -LE SLIDER- -->
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -123,18 +136,14 @@
                   <!-- Premier slide(image+button d'inscription) -->
                     <img width="100%" src="images/slide2.jpg" alt="slide2">
                        <div class="carousel-caption">
-                           <div class="inscription1 " id="inscription1">
-                           <button onclick="document.getElementById('id01').style.display='block'">Inscrivez-vous !</button>
-                           </div>
+                         
                       </div>
                   </div>
                       <div class="item">
                        <!-- Deuxième slide(image+button d'inscription) -->
                          <img width="100%" src="images/slide3.jpg" alt="slide3">
                          <div class="carousel-caption">
-                            <div class="inscription2" id="inscription2">
-                              <button onclick="document.getElementById('id01').style.display='block'">Inscrivez-vous !</button>
-                            </div>
+                         
                         </div>
                      </div>
                      <div class="item">
@@ -142,152 +151,168 @@
                           <img width="100%" src="images/slide4.jpg" alt="slide4">
 
                             <div class="carousel-caption">
-                                <div class="inscription3" id="inscription3">
-                                 <button onclick="document.getElementById('id01').style.display='block'">Inscrivez-vous !</button>
-                                </div><!-- /.inscription3 -->
+                             
                           </div><!-- /.carousel-caption -->
                     </div><!-- /.item -->
          </div><!-- /.carousel-inner -->
 </div><!-- /.carousel slide -->
 
-<br>
-<br>
-<br>
 
+    </div>
+  </section>
 
+             <!-- - -  - - - - - - - - - - - - SCROLL PART 2 -->
 
-         <!-- SECTION 1-->
-
-<div id="main">
-
-<section class="section1 section " id="section1">
-    <div class="container">
-        <div class="row">
+  <section class="background">
+    <div class="content-wrapper">
+    <!-- SECTION 1 -->
+     <section class="section1 section " id="section1">
+    <div class="container-fluid">
         <!-- titre de la section -->
-            <div class="heading-section col-md-12 text-center">
+            
+        <div class="row">
+
+        <div class="heading-section col-xs-12 col-md-12  text-center">
                 <h2>Notre futur appli mobile bientôt dans votre poche !</h2>
             </div> <!-- /.heading-section -->
-        </div> <!-- /.row -->
-        <div class="row">
-        <!-- Colonne vide -->
+        
+            <!-- Première image de la section -->
+            <div class="  col-md-4 hidden-xs ">
+                <img  src="images/13.png" alt="image pub">
+            </div> <!-- /.col-md-6 -->
 
-            <div class="col-md-2 col-sm-6">
-            </div> <!-- /.col-md-2 -->
-            
-            <!-- Image principale de la section -->
-            <div class="col-md-8 col-sm-6">
-                <img src="images/tt.jpg" alt="image pub">
-            </div> <!-- /.col-md-8 -->
+              <!-- Deuxième image de la section -->
+            <div class="  col-md-4 col-xs-12 ">
+                <img  src="images/12.png" alt="image pub">
+            </div> <!-- /.col-md-6 -->
 
-            <!-- Colonne vide -->
-            <div class="col-md-2 col-sm-6">
-            </div> <!-- /.col-md-2 -->
+
+              <!-- Troisième image de la section -->
+            <div class="  col-md-4 hidden-xs">
+                <img  src="images/11.png" alt="image pub">
+            </div> <!-- /.col-md-6 -->
+
+
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section> <!-- /#pub-appli-->
+ 
+ </div>
+  </section>
 
 
+                   
+             <!-- - -  - - - - - - - - - - - - SCROLL PART 3 -->
 
-              <!-- SECTION 2 -->
+  <section class="background">
+    <div class="section2 content-wrapper">
 
 
-<section class=" section2 section " id="services">
-    <div class="container">
+            <!-- SECTION 2 -->
+<section class="section2" id="services">
+    <div class="container-fluid">
         <div class="row">
         <!-- Titre de la section -->
-            <div class="heading-section col-md-12 text-center">
+            <div class="heading-section col-xs-12 col-md-12  text-center">
                 <h2>Nos services</h2>
 
             </div> <!-- /.heading-section -->
         </div> <!-- /.row -->
-                <div class="row">
-                            <!-- Premier service -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item" id="service-1">
-                                    <div class="service-icon">
-                                        <i class="fa fa-file-code-o"></i>
-                                    </div> <!-- /.service-icon -->
-                                    <div class="service-content">
-                                        <div class="inner-service">
-                                            <!-- Nom du premier service -->
-                                            <h3>Mise en relation</h3>
-                                        </div>
-                                    </div> <!-- /.service-content -->
-                                </div> <!-- /#service-1 -->
-                            </div> <!-- /.col-md-3 -->
-                               
-                               <!-- Deuxième service -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item" id="service-2">
-                                    <div class="service-icon">
-                                        <i class="fa fa-paper-plane-o"></i>
-                                    </div> <!-- /.service-icon -->
-                                    <div class="service-content">
-                                        <div class="inner-service">
-                                        <!-- Nom du deuxième service -->
-                                           <h3>Recherche de stage</h3>
-                                       </div>
-                                   </div> <!-- /.service-content -->
-                               </div> <!-- /#service-2 -->
-                           </div> <!-- /.col-md-3 -->
-                              
-                              <!-- troisième service -->
-                           <div class="col-md-3 col-sm-6">
-                            <div class="service-item" id="service-3">
-                                <div class="service-icon">
-                                    <i class="fa fa-institution"></i>
-                                </div> <!-- /.service-icon -->
-                                <div class="service-content">
-                                    <div class="inner-service">
-                                    <!-- Nom du troisième service -->
-                                       <h3>Cv en ligne</h3>
-                                   </div>
-                               </div> <!-- /.service-content -->
-                           </div> <!-- /#service-3 -->
-                       </div> <!-- /.col-md-3 -->
-                         
-                         <!-- Quatrième service -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item" id="service-4">
-                            <div class="service-icon">
-                                <i class="fa fa-flask"></i>
-                            </div> <!-- /.service-icon -->
-                            <div class="service-content">
-                                <div class="inner-service">
-                                <!-- Nom du quatrième service -->
-                                 <h3>Service de messagerie</h3>
-                                </div>
-                             </div> <!-- /.service-content -->
-                       </div> <!-- /#service-4 -->
-                  </div> <!-- /.col-md-3 -->
-            </div> <!-- /.row -->
+	    <div class="row">
+	    
+	                <!-- Premier service -->
+	                <div class="hidden-xs col-md-3">
+	                    <div class="service-item" id="service-1">
+	                        <div class="service-icon">
+	                            <i class="fa fa-file-code-o"></i>
+	                        </div> <!-- /.service-icon -->
+	                        <div class="service-content">
+	                            <div class="inner-service">
+	                                <!-- Nom du premier service -->
+	                                <h3>Mise en relation</h3>
+	                            </div>
+	                        </div> <!-- /.service-content -->
+	                    </div> <!-- /#service-1 -->
+	                </div> <!-- /.col-md-3 -->
+	                   
+	                   <!-- Deuxième service -->
+	                <div class="hidden-xs col-md-3">
+	                    <div class="service-item" id="service-2">
+	                        <div class="service-icon">
+	                            <i class="fa fa-paper-plane-o"></i>
+	                        </div> <!-- /.service-icon -->
+	                        <div class="service-content">
+	                            <div class="inner-service">
+	                            <!-- Nom du deuxième service -->
+	                               <h3>Recherche de stage</h3>
+	                           </div>
+	                       </div> <!-- /.service-content -->
+	                   </div> <!-- /#service-2 -->
+	               </div> <!-- /.col-md-3 -->
+	                  
+	                  <!-- troisième service -->
+	               <div class="col-xs-12 col-md-3">
+	                <div class="service-item" id="service-3">
+	                    <div class="service-icon">
+	                        <i class="fa fa-institution"></i>
+	                    </div> <!-- /.service-icon -->
+	                    <div class="service-content">
+	                        <div class="inner-service">
+	                        <!-- Nom du troisième service -->
+	                           <h3>Cv en ligne</h3>
+	                       </div>
+	                   </div> <!-- /.service-content -->
+	               </div> <!-- /#service-3 -->
+	           </div> <!-- /.col-md-3 -->
+	             
+	             <!-- Quatrième service -->
+	        <div class="hidden-xs col-md-3">
+	            <div class="service-item" id="service-4">
+	                <div class="service-icon">
+	                    <i class="fa fa-flask"></i>
+	                </div> <!-- /.service-icon -->
+	                <div class="service-content">
+	                    <div class="inner-service">
+	                    <!-- Nom du quatrième service -->
+	                     <h3>Service de messagerie</h3>
+	                    </div>
+	                 </div> <!-- /.service-content -->
+	           </div> <!-- /#service-4 -->
+	      </div> <!-- /.col-md-3 -->
+	</div> <!-- /.row -->
     </div> <!-- /.container -->
 </section> <!-- /#services -->
 
 
+    </div>
+  </section>
 
-                 <!-- SECTION 3 -->
+<!-- - -  - - - - - - - - - - - - SCROLL PART 4 -->
 
+  <section class="background">
+    <div class="content-wrapper">
 
-<section class="section3 section" id="portfolio">
-    <div class="container">
-            <div class="row">
+    
+                       <!-- SECTION 3 -->
+
+    <section class="section3 section" id="portfolio">
+    <div class="container-fluid">
+           
+      
+
+         <div class="row">
         <!-- Titre de la section 3 -->
-               <div class="heading-section col-md-12 text-center">
+               <div class="heading-section col-xs-12 col-md-12  text-center">
                 <h2>Nos derniers membres</h2>
 
                </div> <!-- /.heading-section -->
             </div> <!-- /.row -->
-        <div class="row">
 
-            <!-- Colonne vide -->
-                <div class="col-md-3">
-                </div> <!-- /.col-md-3 -->
-
+           
                 <!-- Photo de profil du membre 1 -->
-                <div class="portfolio-item col-md-2 col-sm-6">
+                <div class="portfolio-item col-md-4 hidden-xs">
                     <div class="portfolio-thumb">
-                        <img src="images/d.jpg" alt="Membre 1">
+                        <img sizes="50" src="images/d.jpg" alt="Membre 1">
                         <div class="portfolio-overlay">
                             <h3>Jean didier</h3>
 
@@ -296,7 +321,7 @@
                 </div> <!-- /.portfolio-item -->
 
                 <!-- Photo de profil du membre 2 -->
-                <div class="portfolio-item col-md-2 col-sm-6">
+                <div class="portfolio-item  col-md-4 col-xs-12 ">
                     <div class="portfolio-thumb">
                         <img src="images/d.jpg" alt="Membre 2">
                         <div class="portfolio-overlay">
@@ -308,7 +333,7 @@
                 </div> <!-- /.portfolio-item -->
 
                  <!-- Photo de profil du membre 3 -->
-                <div class="portfolio-item col-md-2 col-sm-6">
+                <div class="portfolio-item col-md-4 col-xs-12 ">
                     <div class="portfolio-thumb">
                         <img src="images/d.jpg" alt="Membre 3">
                         <div class="portfolio-overlay">
@@ -317,27 +342,33 @@
                     </div> <!-- /.portfolio-thumb -->
                 </div> <!-- /.portfolio-item -->
                  
-                
-            <!-- Colonne vide -->
-            <div class="col-md-3">
-            </div> <!-- /.col-md-3 -->
-
-        </div> <!-- /.row -->
+          
+       
 
     </div> <!-- /.container -->
 </section> <!-- /#portfolio -->
 
+ </div>
+  </section>
+                                       
+
+         <!-- - -  - - - - - - - - - - - - SCROLL PART 5 -->
+
+  <section class="background">
+    <div class="content-wrapper">
+
+
+                               <!-- SECTION 4 -->
 
 
 
-                 <!-- SECTION 4-->
-    
 
 <section class="section4 section">
-    <div class="container" id="pub">
+    <div class="container-fluid" id="pub">
         <div class="row">
         <!-- Titre de la section 4 -->
-            <div class="heading-section col-md-12 text-center">
+        <div class="col-xs-12 col-md-12">
+            <div class="heading-section">
                  <h2>Devenez acteur de votre vie en nous  rejoignant </h2>
                  <br>
                  <br>
@@ -345,13 +376,16 @@
                  <!-- Bouton d'inscription -->
                  <button onclick="document.getElementById('id01').style.display='block'">Inscrivez-vous !</button>
             </div> <!-- /.heading-section -->
+            </div>
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>  <!-- /.pub-->
 
-</div>
 
-<!-- FOOTER-->
+
+                       <!-- FOOTER-->
+
+
           
       <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 <!--Debut du footer-->
@@ -361,14 +395,14 @@
     <div class="row">
 
         <!-- Première partie du footer -> infos contact -->
-        <div class="col-md-4 col-sm-6 footer-col">
+        <div class=" col-xs-6 col-md-4  footer-col">
             <div class="logofooter"> Contact</div>
             <p><i class="fa fa-envelope"></i> E-mail : @.com</p>
             <p><i class="fa fa-envelope"></i> Téléphone : 09 09 09 09 09 </p>
         </div> <!-- /.footer-col -->
 
         <!-- Deuxième partie du footer -> liens utiles -->
-        <div class="col-md-4 col-sm-6 footer-col">
+        <div class=" col-xs-6 col-md-4  footer-col">
             <h6 class="heading7">LIENS UTILES</h6>
             <ul class="footer-ul">
               <li><a href="#">A propos</a></li>
@@ -378,7 +412,7 @@
       </div> <!-- /.footer-col -->
 
       <!-- Troisième  partie du footer -> réseaux sociaux -->
-      <div class="col-md-4 col-sm-6 footer-col">
+      <div class=" col-xs-6 col-md-4  footer-col">
         <h6 class="heading7">Réseaux sociaux</h6>
         <ul class="footer-social">
 
@@ -399,10 +433,10 @@
 
 <div class="copyright">
   <div class="container">
-    <div class="col-md-6">
+    <div class=" col-xs-6 col-md-6">
       <p>2017</p>
     </div>
-    <div class="col-md-6">
+    <div class=" col-xs-6 col-md-6">
       <ul class="bottom_ul">
         <li><a href="#">Wolfo</a></li>
           <li><a href="#">Webforce 3</a></li>
@@ -411,7 +445,16 @@
     </div>
   </div>
 </div>
+    
+    </div>
+  </section>
 
-  
+</div> <!-- /.container -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
