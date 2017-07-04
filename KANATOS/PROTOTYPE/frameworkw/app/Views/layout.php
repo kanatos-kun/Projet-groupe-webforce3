@@ -27,5 +27,4 @@
 
 	<?= $this->section('js-last')?>
 </body>
-
 </html>

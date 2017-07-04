@@ -5,79 +5,14 @@ namespace Controller;
 use \W\Controller\Controller;
 use \W\Security\AuthentificationModel;
 use Model\UsersModel;
-use Model\MotdepasseModel;
 
 class DefaultController extends Controller
 {
-
 	/**
 	 * Page d'accueil par défaut
 	 */
 	public function home()
 	{
-
-		$asset = [
-			"css" => [
-									[
-										"link" => "absolute",
-										"url" =>"http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/css/bootstrap.min.css"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/css/font-awesome.css"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/css/main.css"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/css/footer.css"
-									],
-									[
-										"link" => "absolute",
-										"url" => "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/assets/css/style.css"
-									]
-						],
-			"js"  => [
-									[
-										"link" => "relative",
-										"url" => "TOTOR/js/bootstrap.js"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/js/plugins.js"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/js/main.js"
-									],
-									[
-										"link" => "relative",
-										"url" => "TOTOR/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"
-									]
-					],
-			"img" => [
-							"logo" => "TOTOR/images/logo2.png",
-							"slider-showcase" => [
-																		"TOTOR/images/slide.jpg",
-																	  "TOTOR/images/slide4.jpg",
-																	  "TOTOR/images/slide5.jpg"
-																	],
-							"affiche" => "TOTOR/images/tt.jpg",
-							"last-member" => [
-																	"TOTOR/images/d.jpg"
-															 ]
-					     ]
-		];
 
 		$user = new UsersModel();
 
@@ -108,25 +43,41 @@ class DefaultController extends Controller
 
 			if($testDonne == $pswArray['mot_de_passe'])
 			{
-			  $this->redirectToRoute('default_profil');
+				$utilisateur = $user->getUser($_POST['log-email']);
+				$session = new AuthentificationModel();
+				$session->logUserIn([
+					"id"              => $utilisateur['id'],
+					"nom"             => $utilisateur['nom'],
+					"prenom"          => $utilisateur['prenom'],
+					"ville"           => $utilisateur['ville'],
+					"pays"            => $utilisateur['pays'],
+					"status"          => $utilisateur['status'],
+					"privileges"      => $utilisateur['privileges'],
+					"email"           => $utilisateur['email'],
+					"dateinscription" => $utilisateur['dateinscription'],
+					"telephone"       => $utilisateur['telephone'],
+					"nomentreprise"   => $utilisateur['nomentreprise']
+				]);
+				$this->redirectToRoute('default_redirection');
 			}
 			else
 			{
 				$errLog .= $id;
-				$this->show('default/home',["asset"    => $asset,
-																		"errReg"   => $errReg,
-																		"errLog"   => $errLog
-																	 ]);
+				$this->show('default/home',[
+											"errReg"   => $errReg,
+											"errLog"   => $errLog
+											 ]);
 			}
 		}
 		else
 		{
-			$this->show('default/home',["asset"    => $asset,
-																	"errReg"   => $errReg,
-																	"errLog"   => $errLog
-																 ]);
+			$this->show('default/home',[
+										"errReg"   => $errReg,
+										"errLog"   => $errLog
+										 ]);
 		}
 	}
+
 
 	public function projet()
 	{
@@ -148,111 +99,111 @@ class DefaultController extends Controller
 		$this->show('default/avantagespremium');
 	}
 
-	public function dashboard()
+	public function redirection()
 	{
-		$this->show('default/Dashboard_utilisateur');
+		$this->show('default/redirection');
 	}
 
 
+		//***********************************************
+		//               Fonction tierce
+		//***********************************************
+		public function validateRegistration($user)
+		{
+			$errReg="";
+			$checkMailReg=false;
+			$checkPswReg=false;
 
-	//***********************************************
-	//               Fonction tierce
-	//***********************************************
-	public function validateRegistration($user)
-	{
-		$errReg="";
-		$checkMailReg=false;
-		$checkPswReg=false;
+			//-------------------------------------------
+			// Gestion de l'inscription'
+			//-------------------------------------------
+		 if(isset($_POST['reg-email']) &&
+				!empty($_POST['reg-email']) &&
+				filter_var($_POST['reg-email'],FILTER_VALIDATE_EMAIL) &&
+				$_POST['reg-email'] == $_POST['reg-email-repeat'] &&
+				!$user->checkMail($_POST['reg-email'])
+				)
+		 {
+					$checkMailReg = true;
+		 }
+		 else if(!isset($_POST['reg-email']))
+		 {
 
-		//-------------------------------------------
-		// Gestion de l'inscription'
-		//-------------------------------------------
-	 if(isset($_POST['reg-email']) &&
-			!empty($_POST['reg-email']) &&
-			filter_var($_POST['reg-email'],FILTER_VALIDATE_EMAIL) &&
-			$_POST['reg-email'] == $_POST['reg-email-repeat'] &&
-			!$user->checkMail($_POST['reg-email'])
+		 }
+		 else
+		 {
+			 $errReg .= " sub::(pb au niveau du mail)";
+		 }
+
+				if(isset($_POST['reg-psw']) &&
+					!empty($_POST['reg-psw']) &&
+					strlen($_POST['reg-psw'])>7 &&
+					$_POST['reg-psw'] == $_POST['reg-psw-repeat']
 			)
-	 {
-				$checkMailReg = true;
-	 }
-	 else if(!isset($_POST['reg-email']))
-	 {
+			{
+					$checkPswReg = true;
+			}
+			else if(!isset($_POST['reg-psw']))
+			{
 
-	 }
-	 else
-	 {
-		 $errReg .= " sub::(pb au niveau du mail)";
-	 }
+			}
+			else
+			{
+				 $errReg .= " sub::(pb au niveau du mot de passe)";
+			}
 
-			if(isset($_POST['reg-psw']) &&
-				!empty($_POST['reg-psw']) &&
-				strlen($_POST['reg-psw'])>7 &&
-				$_POST['reg-psw'] == $_POST['reg-psw-repeat']
-		)
-		{
-				$checkPswReg = true;
-		}
-		else if(!isset($_POST['reg-psw']))
-		{
-
-		}
-		else
-		{
-			 $errReg .= " sub::(pb au niveau du mot de passe)";
+			$pkg = array( "checkPswReg"  => $checkPswReg,
+		 								"checkMailReg" => $checkMailReg,
+									  "errReg"       => $errReg);
+			return $pkg;
 		}
 
-		$pkg = array( "checkPswReg"  => $checkPswReg,
-	 								"checkMailReg" => $checkMailReg,
-								  "errReg"       => $errReg);
-		return $pkg;
-	}
+		public function validateLog($user)
+		{
+			$errLog="";
+			$checkMailLog=false;
+			$checkPswLog=false;
+			//-------------------------------------------
+			// Gestion de la connexion
+			//-------------------------------------------
+			if(isset($_POST['log-email']) &&
+				 !empty($_POST['log-email']) &&
+				 filter_var($_POST['log-email'],FILTER_VALIDATE_EMAIL) &&
+	       $user->checkMail($_POST['log-email'])
+				 )
+			{
+					 $checkMailLog = true;
+			}
+			else if(!isset($_POST['log-email']))
+			{
 
-	public function validateLog($user)
-	{
-		$errLog="";
-		$checkMailLog=false;
-		$checkPswLog=false;
-		//-------------------------------------------
-		// Gestion de la connexion
-		//-------------------------------------------
-		if(isset($_POST['log-email']) &&
-			 !empty($_POST['log-email']) &&
-			 filter_var($_POST['log-email'],FILTER_VALIDATE_EMAIL) &&
-       $user->checkMail($_POST['log-email'])
+			}
+			else
+			{
+				$errLog .= " log::(pb au niveau du mail)";
+			}
+
+			if(isset($_POST['log-psw']) &&
+				!empty($_POST['log-psw']) &&
+				strlen($_POST['log-psw'])>7
 			 )
-		{
-				 $checkMailLog = true;
-		}
-		else if(!isset($_POST['log-email']))
-		{
+			{
+					$checkPswLog = true;
+			}
+			else if(!isset($_POST['log-psw']))
+			{
 
-		}
-		else
-		{
-			$errLog .= " log::(pb au niveau du mail)";
+			}
+			else
+			{
+				 $errLog .= " log::(pb au niveau du mot de passe)";
+			}
+			$pkg = array( "checkPswLog"  => $checkPswLog,
+		 								"checkMailLog" => $checkMailLog,
+									  "errLog"       => $errLog);
+			return $pkg;
 		}
 
-		if(isset($_POST['log-psw']) &&
-			!empty($_POST['log-psw']) &&
-			strlen($_POST['log-psw'])>7
-		 )
-		{
-				$checkPswLog = true;
-		}
-		else if(!isset($_POST['log-psw']))
-		{
-
-		}
-		else
-		{
-			 $errLog .= " log::(pb au niveau du mot de passe)";
-		}
-		$pkg = array( "checkPswLog"  => $checkPswLog,
-	 								"checkMailLog" => $checkMailLog,
-								  "errLog"       => $errLog);
-		return $pkg;
-	}
 
 
 }
