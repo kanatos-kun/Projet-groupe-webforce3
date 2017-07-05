@@ -50,7 +50,7 @@
 			"img" : {
 							"logo" : "TOTOR/images/logo2.png",
 							"slider-showcase" : [
-																		"TOTOR/images/slide.jpg",
+																	  "TOTOR/images/slide.jpg",
 																	  "TOTOR/images/slide4.jpg",
 																	  "TOTOR/images/slide5.jpg"
 																	],

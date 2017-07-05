@@ -5,7 +5,6 @@ namespace Controller;
 use \W\Controller\Controller;
 use \W\Security\AuthentificationModel;
 use Model\UsersModel;
-use Model\MotdepasseModel;
 
 class DefaultController extends Controller
 {
@@ -17,7 +16,7 @@ class DefaultController extends Controller
 	{
 
 		$user = new UsersModel();
-
+    $session = new AuthentificationModel();
 		// regarde si les données envoyées sont correct.
 		extract($this->validateRegistration($user),EXTR_OVERWRITE);
 		extract($this->validateLog($user),EXTR_OVERWRITE);
@@ -39,13 +38,26 @@ class DefaultController extends Controller
 			//$this->show('default/Dashboard_utilisateur',["test" => $id]);
 		}
 		else if ($checkMailLog && $checkPswLog) {
-			$id = $user->getId(["email"=>$_POST['log-email']]);
+			$utilisateur = $user->getUser(["email" => $_POST['log-email']]);
+			$id = $user->getId(["email" => $_POST['log-email']]);
 			$pswArray = $user->getPswTable(["utilisateur_id" => $id]);
 			$testDonne = hash_pbkdf2('sha1', $_POST['log-psw'], $pswArray['salt'], $pswArray['iteration'] ,$pswArray['longueur'] = 64 ,$raw_output = false);
-
 			if($testDonne == $pswArray['mot_de_passe'])
 			{
-			  $this->redirectToRoute('default_profil');
+				$session->logUserIn([
+					"id"              => $utilisateur['id'],
+					"nom"             => $utilisateur['nom'],
+					"prenom"          => $utilisateur['prenom'],
+					"ville"           => $utilisateur['ville'],
+					"pays"            => $utilisateur['pays'],
+					"status"          => $utilisateur['status'],
+					"privileges"      => $utilisateur['privileges'],
+					"email"           => $utilisateur['email'],
+					"dateinscription" => $utilisateur['dateinscription'],
+					"telephone"       => $utilisateur['telephone'],
+					"nomentreprise"   => $utilisateur['nomentreprise']
+				]);
+				$this->show('default/redirection');
 			}
 			else
 			{
@@ -85,9 +97,9 @@ class DefaultController extends Controller
 		$this->show('default/avantagespremium');
 	}
 
-	public function dashboard()
+	public function redirection()
 	{
-		$this->show('default/Dashboard_utilisateur');
+		$this->show('default/redirection');
 	}
 
 

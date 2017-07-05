@@ -10,9 +10,10 @@ class UsersModel extends \W\Model\UsersModel
 		return $this->emailExists($email);
 	}
 
-	public function getUser($username)
+	public function getUser($email)
 	{
-		return $this-> getUserByUsernameOrEmail($username);
+		$this->setPrimaryKey('id');
+		return $this->search($email)[0];
 	}
 
 	public function getId($mail)
