@@ -41,6 +41,7 @@
 	<script src="js/Dashboard_utilisateur.js"></script>
 	
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -61,12 +62,6 @@
 				<li><a class="Projets" href="Projets.php">Projets</a></li>
 				<li><a class="Formations" href="Formations.php">Formations</a></li>
 				<li><a class="Profil" href="profil.php">Profil</a></li>
-			</ul>	
-		</div>
-
-		<div class="navbar-custom-menu user-menu">
-			<ul class="nav navbar-nav">
-				<!-- User Account: style can be found in dropdown.less -->
 				<li class="dropdown user user-menu">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<img src="img/img1.jpg" class="user-image" alt="User Image">
@@ -108,20 +103,745 @@
 						</li>
 					</ul>
 				</li>
-			</ul>
+			</ul>	
 		</div>
+		
 	</div>
 </nav>
 
 <!-- NAVBAR -->
-<div class="container-fluid">
 
+<!-- SECTION 1 -->
+<section class="row AnnonceForm">
+	<div class="col-xs-12">
+
+		<table class="texteCarnet" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+
+			<tbody>
+				<tr class="trTitreTableau">
+					<td valign="top"><b>Diplôme</b></td>
+					<td valign="top"><b>Durée&nbsp;et&nbsp;Prérequis</b> </td>
+					<td valign="top"><b>Ville</b></td>
+					<td align="center">&nbsp;</td>
+				</tr>
+<!-- ligne Annonce 1 -->
+				<tr class="tr1">
+					<td valign="top" height="40"><b>BTS</b>
+						<br>
+						Design Graphique option Communication et Médias Numériques
+					</td>
+					<td valign="top">
+						2 ans - Bac<br>
+						1 an - Bac+2<br>
+					</td>
+
+					<td valign="top" align="center">
+						<br>BESANÇON (25)
+					</td>
+					<td align="center">
+						<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm1">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							&nbsp;Afficher</button>
+
+							<div class="modal fade" id="modalForm1" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<!-- Contenu du modale -->
+											
+											<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+												<tbody><tr class="trTitreTableau">
+													<td colspan="3" align="left"><strong>Formation :</strong></td>
+												</tr>
+												<tr>
+													<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+												</tr>
+												<tr>
+													<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+													<td width="510">BTS </td>
+												</tr>
+												<tr>
+													<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+													<td>Design Graphique option Communication et Médias Numériques</td>
+												</tr>
+												<tr>
+													<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+													<td> 2 ans - Bac<br>
+														1 an - Bac+2<br>
+													</td>
+												</tr>
+												<tr>
+													<td class="tr1"><strong>Niveau de la formation : </strong></td>
+													<td>Bac+2</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+												</tr>
+												<tr>
+													<td colspan="2">Cette formation prépare à la réalisation de produits en ligne et hors ligne, à la conception et à la conduite des projets multimédia
+														(CD-rom, sites internet, etc…). Elle s'adresse à des jeunes de 16 à 25 ans titulaires d'un Bac STD2A, d'un Bac Pro de la chaine graphique, d'un Bac général ou technologique avec une année de MANAA (mise à niveau en arts appliqués)ou d'un BTS Design Graphique option Médias Imprimés souhaitant compléter leur formation et ayant un contrat d'apprentissage. Elle nécessite des qualités de créativité, de sensibilité, de capacité à communiquer et à travailler en équipe. Il est possible de poursuivre ensuite en Licence Produits et Services Multimédia, en DSAA1, en DUT Services et réseaux de communication ou d'intégrer une école d'art. Le métier préparé est celui d'infographiste exécutant multimédia, de concepteur réalisateur multimédia ou de webdesigner. 
+														Contenu des épreuves : 
+														Projet professionnel - coef. 8 Dossier de travaux - coef. 3 Créativité réactive - coef. 3 Recherche créative - coef.3 Sciences humaines - coef. 3 Anglais - coef. 3 </td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>Taux de réussite aux diplômes :</strong> 60%</td>
+													</tr>
+													<tr>
+														<td class="tr1" colspan="2">&nbsp;</td>
+													</tr>
+													<tr>
+														<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+														<td>
+															25000 BESANÇON
+														</td>
+													</tr>
+													<tr>
+														<td class="tr1" colspan="2">&nbsp;</td>
+													</tr>
+													<tr>
+														<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 31/05/2017.</td>
+													</tr>
+												</tbody></table>
+
+												<!-- Contenu du modale -->
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</td>
+						</tr>
+<!-- ligne Annonce 1 -->
+
+<!-- ligne Annonce 2 -->
+						<tr class="tr2">
+							<td valign="top" height="40"><b>Licence Pro</b>
+								<br>
+								Métiers de l’informatique : Développeur et Intégrateur de Web Applications (DIWA)
+							</td>
+							<td valign="top">
+								1 an - Bac+2<br>
+							</td>
+
+							<td valign="top" align="center">
+								<br>LAVAL CEDEX (53)
+							</td>
+							<td align="center">
+								<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm2">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									&nbsp;Afficher</button>
+
+									<div class="modal fade" id="modalForm2" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<!-- Contenu du modale -->
+
+													<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+														<tbody><tr class="trTitreTableau">
+															<td colspan="3" align="left"><strong>Formation :</strong></td>
+														</tr>
+														<tr>
+															<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+														</tr>
+														<tr>
+															<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+															<td width="510">Licence Pro </td>
+														</tr>
+														<tr>
+															<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+															<td>Métiers de l’informatique : Développeur et Intégrateur de Web Applications (DIWA)</td>
+														</tr>
+														<tr>
+															<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+															<td> 1 an - Bac+2<br>
+															</td>
+														</tr>
+														<tr>
+															<td class="tr1"><strong>Niveau de la formation : </strong></td>
+															<td>Bac+3</td>
+														</tr>
+														<tr>
+															<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+														</tr>
+														<tr>
+															<td colspan="2">L'objectif de cette licence est de former de futurs professionnels capables gérer des projets d’applications pour le Web et d’en maîtriser le développement et l’intégration
+
+																Programmer le Web	120h : Modélisation des données multimédia	20h, Programmation Client Web	30h, Programmation Serveur Web	30h, Programmation CMS	15h, Webdesign	25h
+																Concevoir et gérer un projet multimédia	135h, Anglais professionnel	25h, Communication appliquée à la conduite de projet	25h, Gestion de projet - Approche agile	30h, Outils de la gestion de projet	15h, Analyse des besoins et des usages	20h, IHM et Expérience utilisateur 	20h
+
+																Développer des Webapps	135h : Architecture et développement par Design Patterns	30h, Système d’information multimédia	 25h, Intégration multimédia avancée	40h, Programmation serveur avancée	40h
+
+																Métiers : 
+
+																•	Développeur multimédia
+																•	Développeur d'applications web
+																•	Intégrateur web 
+																•	Webmaster développeur
+																•	Développeur Web mobile
+																•	Assistant chef de projet
+																•	Architecte Web
+																•	Consultant IT
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2"><strong>Taux de réussite aux diplômes :</strong> 95%</td>
+														</tr>
+														<tr>
+															<td colspan="2"><strong>Taux d'embauche dans les 6 mois après la remise du diplome  :</strong> 95%</td>
+														</tr>
+														<tr>
+															<td class="tr1" colspan="2">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+															<td> 53020 LAVAL CEDEX</td>
+														</tr>
+														<tr>
+															<td class="tr1" colspan="2">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 10/02/2017.</td>
+														</tr>
+													</tbody></table>
+
+													<!-- Contenu du modale -->
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</td>
+							</tr>
+<!-- ligne Annonce 2 -->
+
+<!-- ligne Annonce 3 -->
+							<tr class="tr1">
+								<td valign="top" height="40"><b>Licence Pro</b>
+									<br>
+									Métiers de l’informatique : Conceptn Dévelopmt et Test de Logiciels, Test et qualité Logiciel (TQL)
+								</td>
+								<td valign="top">
+									1 an - Bac+2<br>
+								</td>
+
+								<td valign="top" align="center">
+									<br>LAVAL CEDEX (53)
+								</td>
+								<td align="center">
+									<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm3">
+										<i class="fa fa-search" aria-hidden="true"></i>
+										&nbsp;Afficher</button>
+
+										<div class="modal fade" id="modalForm3" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<!-- Contenu du modale -->
+														<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+															<tbody><tr class="trTitreTableau">
+																<td colspan="3" align="left"><strong>Formation :</strong></td>
+															</tr>
+															<tr>
+																<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+															</tr>
+															<tr>
+																<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+																<td width="510">Licence Pro </td>
+															</tr>
+															<tr>
+																<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+																<td>Métiers de l’informatique : Développeur et Intégrateur de Web Applications (DIWA)</td>
+															</tr>
+															<tr>
+																<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+																<td> 1 an - Bac+2<br>
+																</td>
+															</tr>
+															<tr>
+																<td class="tr1"><strong>Niveau de la formation : </strong></td>
+																<td>Bac+3</td>
+															</tr>
+															<tr>
+																<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+															</tr>
+															<tr>
+																<td colspan="2">L'objectif de cette licence est de former de futurs professionnels capables gérer des projets d’applications pour le Web et d’en maîtriser le développement et l’intégration
+
+																	Programmer le Web	120h : Modélisation des données multimédia	20h, Programmation Client Web	30h, Programmation Serveur Web	30h, Programmation CMS	15h, Webdesign	25h
+																	Concevoir et gérer un projet multimédia	135h, Anglais professionnel	25h, Communication appliquée à la conduite de projet	25h, Gestion de projet - Approche agile	30h, Outils de la gestion de projet	15h, Analyse des besoins et des usages	20h, IHM et Expérience utilisateur 	20h
+
+																	Développer des Webapps	135h : Architecture et développement par Design Patterns	30h, Système d’information multimédia	 25h, Intégration multimédia avancée	40h, Programmation serveur avancée	40h
+
+																	Métiers : 
+
+																	•	Développeur multimédia
+																	•	Développeur d'applications web
+																	•	Intégrateur web 
+																	•	Webmaster développeur
+																	•	Développeur Web mobile
+																	•	Assistant chef de projet
+																	•	Architecte Web
+																	•	Consultant IT
+																</td>
+															</tr>
+															<tr>
+																<td colspan="2"><strong>Taux de réussite aux diplômes :</strong> 95%</td>
+															</tr>
+															<tr>
+																<td colspan="2"><strong>Taux d'embauche dans les 6 mois après la remise du diplome  :</strong> 95%</td>
+															</tr>
+															<tr>
+																<td class="tr1" colspan="2">&nbsp;</td>
+															</tr>
+															<tr>
+																<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+																<td> 53020 LAVAL CEDEX</td>
+															</tr>
+															<tr>
+																<td class="tr1" colspan="2">&nbsp;</td>
+															</tr>
+															<tr>
+																<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 10/02/2017.</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- Contenu du modale -->
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</td>
+							</tr>
+<!-- ligne Annonce 3 -->
+
+<!-- ligne Annonce 4 -->
+							<tr class="tr2">
+								<td valign="top" height="40"><b>Licence Pro</b>
+									<br>
+									Métiers de l’informatique : Conceptn Dévelopmt et Test de Logiciels, Test et qualité Logiciel (TQL)
+								</td>
+								<td valign="top">
+									1 an - Bac+2<br>
+								</td>
+
+								<td valign="top" align="center">
+									<br>LAVAL CEDEX (53)
+								</td>
+								<td align="center">
+									<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm4">
+										<i class="fa fa-search" aria-hidden="true"></i>
+										&nbsp;Afficher</button>
+
+										<div class="modal fade" id="modalForm4" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<!-- Contenu du modale -->
+														<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+															<tbody><tr class="trTitreTableau">
+																<td colspan="3" align="left"><strong>Formation :</strong></td>
+															</tr>
+															<tr>
+																<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+															</tr>
+															<tr>
+																<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+																<td width="510">Licence Pro </td>
+															</tr>
+															<tr>
+																<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+																<td>Act. &amp; Techniques de Communication Spéc. Développeur Web des Systèmes d'Information et Multimédia </td>
+															</tr>
+															<tr>
+																<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+																<td> 1 an - Bac+2<br>
+																</td>
+															</tr>
+															<tr>
+																<td class="tr1"><strong>Niveau de la formation : </strong></td>
+																<td>Bac+3</td>
+															</tr>
+															<tr>
+																<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+															</tr>
+															<tr>
+																<td colspan="2">Contenu de la formation (connexion à une plate-forme de formation à distance):
+																	Initiation au développement des applications web, Organisation de la production multimédia, Nouvelles technologies de communication,
+																	Développement web 2.0, Technologie mobile, Réseaux et sécurité, Elearning, Développement de pédagogies ludiques...
+																	Métiers visés : Assistant chef de projets, Chef de projets web 2.0, Rédacteur et intégrateur de
+																	contenus numériques, Développeurs des applications numériques, Intégrateur web, Développeur multimédia, Webmaster, Community manager...</td>
+																</tr>
+																<tr>
+																	<td class="tr1" colspan="2">&nbsp;</td>
+																</tr>
+																<tr>
+																	<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+																	<td>
+																		67000 STRASBOURG
+																	</td>
+																</tr>
+																<tr>
+																	<td class="tr1" colspan="2">&nbsp;</td>
+																</tr>
+																<tr>
+																	<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 19/01/2017.</td>
+																</tr>
+															</tbody>
+														</table>
+														<!-- Contenu du modale -->
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</td>
+								</tr>
+<!-- ligne Annonce 4 -->
+
+<!-- ligne Annonce 5 -->
+								<tr class="tr1">
+									<td valign="top" height="40"><b>BTS</b>
+										<br>
+										Design Graphique option Communication et Médias Numériques
+									</td>
+									<td valign="top">
+										2 ans - Bac<br>
+										1 an - Bac+2<br>
+									</td>
+
+									<td valign="top" align="center">
+										<br>BESANÇON (25)
+									</td>
+									<td align="center">
+										<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm5">
+											<i class="fa fa-search" aria-hidden="true"></i>
+											&nbsp;Afficher</button>
+
+											<div class="modal fade" id="modalForm5" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<!-- Contenu du modale -->
+
+															<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+																<tbody><tr class="trTitreTableau">
+																	<td colspan="3" align="left"><strong>Formation :</strong></td>
+																</tr>
+																<tr>
+																	<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+																</tr>
+																<tr>
+																	<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+																	<td width="510">BTS </td>
+																</tr>
+																<tr>
+																	<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+																	<td>Design Graphique option Communication et Médias Numériques</td>
+																</tr>
+																<tr>
+																	<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+																	<td> 2 ans - Bac<br>
+																		1 an - Bac+2<br>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="tr1"><strong>Niveau de la formation : </strong></td>
+																	<td>Bac+2</td>
+																</tr>
+																<tr>
+																	<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+																</tr>
+																<tr>
+																	<td colspan="2">Cette formation prépare à la réalisation de produits en ligne et hors ligne, à la conception et à la conduite des projets multimédia
+																		(CD-rom, sites internet, etc…). Elle s'adresse à des jeunes de 16 à 25 ans titulaires d'un Bac STD2A, d'un Bac Pro de la chaine graphique, d'un Bac général ou technologique avec une année de MANAA (mise à niveau en arts appliqués)ou d'un BTS Design Graphique option Médias Imprimés souhaitant compléter leur formation et ayant un contrat d'apprentissage. Elle nécessite des qualités de créativité, de sensibilité, de capacité à communiquer et à travailler en équipe. Il est possible de poursuivre ensuite en Licence Produits et Services Multimédia, en DSAA1, en DUT Services et réseaux de communication ou d'intégrer une école d'art. Le métier préparé est celui d'infographiste exécutant multimédia, de concepteur réalisateur multimédia ou de webdesigner. 
+																		Contenu des épreuves : 
+																		Projet professionnel - coef. 8 Dossier de travaux - coef. 3 Créativité réactive - coef. 3 Recherche créative - coef.3 Sciences humaines - coef. 3 Anglais - coef. 3 </td>
+																	</tr>
+																	<tr>
+																		<td colspan="2"><strong>Taux de réussite aux diplômes :</strong> 60%</td>
+																	</tr>
+																	<tr>
+																		<td class="tr1" colspan="2">&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+																		<td>
+																			25000 BESANÇON
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="tr1" colspan="2">&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 31/05/2017.</td>
+																	</tr>
+																</tbody></table>
+
+																<!-- Contenu du modale -->
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																<button type="button" class="btn btn-primary">Save changes</button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</td>
+										</tr>
+<!-- ligne Annonce 5 -->
+
+<!-- ligne Annonce 6 -->
+										<tr class="tr2">
+											<td valign="top" height="40"><b>Master 1ère et 2ème année</b>
+												<br>
+												Informatique Spéc. Méthodes Informatiques Appliquées à la Gestion des Entreprises
+											</td>
+											<td valign="top">
+												2 ans - Bac+3<br>
+											</td>
+
+											<td valign="top" align="center">
+												<br>MULHOUSE CEDEX (68)
+											</td>
+											<td align="center">
+												<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm6">
+													<i class="fa fa-search" aria-hidden="true"></i>
+													&nbsp;Afficher</button>
+
+													<div class="modal fade" id="modalForm6" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																</div>
+																<div class="modal-body">
+																	<!-- Contenu du modale -->
+
+																	<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+																		<tbody><tr class="trTitreTableau">
+																			<td colspan="3" align="left"><strong>Formation :</strong></td>
+																		</tr>
+																		<tr>
+																			<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+																		</tr>
+																		<tr>
+																			<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+																			<td width="510">Master 1ère et 2ème année </td>
+																		</tr>
+																		<tr>
+																			<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+																			<td>Informatique Spéc. Méthodes Informatiques Appliquées à la Gestion des Entreprises</td>
+																		</tr>
+																		<tr>
+																			<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+																			<td> 2 ans - Bac+3<br>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="tr1"><strong>Niveau de la formation : </strong></td>
+																			<td>Bac+5</td>
+																		</tr>
+																		<tr>
+																			<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+																		</tr>
+																		<tr>
+																			<td colspan="2">Contenu de la formation : Informatique de gestion (systèmes d'information, ERP, big data, …),
+																				Développement d'applications (programmation objet, smartphone, Web, …), Economie-Gestion, Droit, Système et réseaux, Langues et
+																				communication… Spécialisation en 2ème année : Cyber sécurité et Technologie Web...
+																				Métiers visés :Ingénieur concepteur de systèmes d'information, Administrateur de bases de données, Ingénieur études et développement, Responsable / expert en sécurité, Architecte Web, Consultant informatique, chef de projets... </td>
+																			</tr>
+																			<tr>
+																				<td class="tr1" colspan="2">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+																				<td>
+																					68093 MULHOUSE CEDEX
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="tr1" colspan="2">&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 19/01/2017.</td>
+																			</tr>
+																		</tbody>
+																	</table>
+
+																	<!-- Contenu du modale -->
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																	<button type="button" class="btn btn-primary">Save changes</button>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+
+<!-- ligne Annonce 6 -->
+
+<!-- ligne Annonce 7 -->
+											<tr class="tr1">
+												<td valign="top" height="40"><b>Licence Pro</b>
+													<br>
+													Métiers de l’informatique : Conceptn Dévelopmt et Test de Logiciels, Test et qualité Logiciel (TQL)
+												</td>
+												<td valign="top">
+													1 an - Bac+2<br>
+												</td>
+
+												<td valign="top" align="center">
+													<br>LAVAL CEDEX (53)
+												</td>
+												<td align="center">
+													<button type="button" class="btn btn-primary btn-lg texteTableauLien" data-toggle="modal" data-target="#modalForm4">
+														<i class="fa fa-search" aria-hidden="true"></i>
+														&nbsp;Afficher</button>
+
+														<div class="modal fade" id="modalForm4" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title" id="exampleModalLongTitle">Formation</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<!-- Contenu du modale -->
+																		<table class="tableauForum" width="700px" cellspacing="0" border="0" align="center">
+																			<tbody><tr class="trTitreTableau">
+																				<td colspan="3" align="left"><strong>Formation :</strong></td>
+																			</tr>
+																			<tr>
+																				<td class="tr_cache" colspan="2"><p align="center"><strong>Les coordonnées du centre de formation ne sont visibles que par les internautes inscrits sur le site de France apprentissage. Cette inscription est gratuite et sans engagement.</strong><br></p></td>
+																			</tr>
+																			<tr>
+																				<td class="tr1" width="186"><strong>Intitulé du diplôme ou du titre : </strong></td>
+																				<td width="510">Licence Pro </td>
+																			</tr>
+																			<tr>
+																				<td class="tr1"><strong>Intitulé de la filière  : </strong></td>
+																				<td>Act. &amp; Techniques de Communication Spéc. Développeur Web des Systèmes d'Information et Multimédia </td>
+																			</tr>
+																			<tr>
+																				<td class="tr1" valign="top"><strong>Durée de la formation &amp; Prérequis : </strong></td>
+																				<td> 1 an - Bac+2<br>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="tr1"><strong>Niveau de la formation : </strong></td>
+																				<td>Bac+3</td>
+																			</tr>
+																			<tr>
+																				<td colspan="2" class="tr1"><strong>Contenu de la formation et descriptif métiers :</strong></td>
+																			</tr>
+																			<tr>
+																				<td colspan="2">Contenu de la formation (connexion à une plate-forme de formation à distance):
+																					Initiation au développement des applications web, Organisation de la production multimédia, Nouvelles technologies de communication,
+																					Développement web 2.0, Technologie mobile, Réseaux et sécurité, Elearning, Développement de pédagogies ludiques...
+																					Métiers visés : Assistant chef de projets, Chef de projets web 2.0, Rédacteur et intégrateur de
+																					contenus numériques, Développeurs des applications numériques, Intégrateur web, Développeur multimédia, Webmaster, Community manager...</td>
+																				</tr>
+																				<tr>
+																					<td class="tr1" colspan="2">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td class="tr1" valign="top"><strong>Lieu de la formation : </strong></td>
+																					<td>
+																						67000 STRASBOURG
+																					</td>
+																				</tr>
+																				<tr>
+																					<td class="tr1" colspan="2">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td class="tr0" colspan="2" align="center">Cette formation a été mise à jour le 19/01/2017.</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!-- Contenu du modale -->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</td>
+												</tr>
+<!-- ligne Annonce 7 -->
+
+			</tbody>
+
+		</table>
+	</div>
+</section>
+<!-- SECTION 1 -->
 
 </body>
 
+<!-- FOOTER -->
 <footer>
     
     <p>ScrapSearch &copy 2017 | <a href="Mentions Légales" class="ML"> Mentions légales </a></p>
     
 </footer>
-
+<!-- FOOTER -->

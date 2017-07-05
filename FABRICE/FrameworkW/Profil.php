@@ -61,21 +61,15 @@
 				<li><a class="Projets" href="Projets.php">Projets</a></li>
 				<li><a class="Formations" href="Formations.php">Formations</a></li>
 				<li><a class="Profil" href="profil.php">Profil</a></li>
-			</ul>	
-		</div>
-
-		<div class="navbar-custom-menu user-menu">
-			<ul class="nav navbar-nav">
-				<!-- User Account: style can be found in dropdown.less -->
 				<li class="dropdown user user-menu">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<img src="img/img1.jpg" class="user-image" alt="User Image">
 						<span class="hidden-xs">Alexander Pierce</span>
 					</a>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu ">
 						<!-- User image -->
-						<li class="user-header ">
-							<img src="img/img1.jpg" class="img-circle" alt="User Image">
+						<li class="user-profil Users">
+							<img src="img/img1.jpg" class="img-circle circle2" alt="User Image">
 
 							<p>
 								Alexander Pierce - Web Developer
@@ -85,19 +79,17 @@
 						<!-- Menu Body -->
 						<li class="user-body">
 							<div class="row">
-								<div class="col-xs-4 text-center">
+								<div class="col-xs-6 text-center">
 									<a href="#">Followers</a>
 								</div>
-								<div class="col-xs-4 text-center">
-									<a href="#">Sales</a>
-								</div>
-								<div class="col-xs-4 text-center">
+								
+								<div class="col-xs-6 text-center">
 									<a href="#">Contacts</a>
 								</div>
 							</div>
-							<!-- /.row -->
+							<!-- row -->
 						</li>
-						<!-- Menu Footer-->
+						<!-- Menu Footer -->
 						<li class="user-footer">
 							<div class="pull-left">
 								<a href="#" class="btn btn-default btn-flat">Profil</a>
@@ -108,14 +100,13 @@
 						</li>
 					</ul>
 				</li>
-			</ul>
+			</ul>	
 		</div>
+		
 	</div>
 </nav>
 
 <!-- NAVBAR -->
-<div class="container-fluid">
-
 
 </body>
 

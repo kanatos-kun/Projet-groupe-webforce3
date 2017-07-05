@@ -67,12 +67,6 @@
 				<li><a class="Projets" href="Projets.php">Projets</a></li>
 				<li><a class="Formations" href="Formations.php">Formations</a></li>
 				<li><a class="Profil" href="profil.php">Profil</a></li>
-			</ul>	
-		</div>
-
-		<div class="navbar-custom-menu user-menu">
-			<ul class="nav navbar-nav">
-				<!-- User Account: style can be found in dropdown.less -->
 				<li class="dropdown user user-menu">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<img src="img/img1.jpg" class="user-image" alt="User Image">
@@ -112,8 +106,9 @@
 						</li>
 					</ul>
 				</li>
-			</ul>
+			</ul>	
 		</div>
+
 	</div>
 </nav>
 
