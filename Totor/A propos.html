@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A propos</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+  
+
+
+  
+</head>
+
+<body>
+  <div class="container">
+ 
+ <!-- - -  - - - - - - - - - - - - SCROLL PART 1 -->
+
+  <section class="background">
+    <div class="content-wrapper">
+     
+         <!-- La navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+    
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <!-- Logo navbar coté gauche -->
+      <a class="navbar-brand" href="/">Wolfo</a>
+         <ul class="nav navbar-nav navbar-right">
+         <!-- Menus navabr coté droit -->
+           <li><a href="/">Accueil</a></li>
+           <li><a href="/">Premium</a></li>
+         <li><a href="/" style="color: coral;text-decoration: underline;">A propos</a></li>
+           <button onclick="document.getElementById('id02').style.display='block'">Connexion</button>
+         </ul>
+      </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+</nav><!-- /.navbar-default -->
+                     
+ 
+    
+
+<!-- le formulaire de connexion -->
+<div id="id02" class="modal id2">
+    <span onclick="document.getElementById('id02').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="action_connexion.php" method="POST">
+
+       <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="log-uname" required/>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="log-psw" required/>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked"/> Remember me
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn-2">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+  </form>
+</div> 
+
+
+  
+        
+
+
+   
+    <!-- SECTION 5 -->
+     <section class="section5 section " id="section1">
+    <div class="container-fluid">
+        <!-- titre de la section -->
+            
+        <div class="row">
+
+        <div class="heading-sections col-xs-12 col-md-12  text-center">
+                <h2>A propos</h2>
+            </div> <!-- /.heading-section -->
+       
+
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section> <!-- /#pub-appli-->
+ 
+ </div>
+  </section>
+
+                                       
+<!-- - -  - - - - - - - - - - - - SCROLL PART 2 -->
+
+  <section class="background">
+    <div class="  content-wrapper ">
+
+   <section class="section6 section">
+    <div class="container-fluid" id="pub">
+        <div class="row">
+        <!-- Titre de la section 4 -->
+        <div class="col-xs-12 col-md-12">
+            <div class="heading-section5">
+                  
+           <h2>Notre site a pour but de...</h2>
+           <br>
+              <br>
+                 <br>
+
+           <h2>Notre équipe...</h2>
+                 <br>
+                 <br>
+                 <br>
+                 
+            </div> <!-- /.heading-section -->
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>  <!-- /.pub-->
+
+
+
+                       <!-- FOOTER-->
+
+
+          
+      <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+<!--Debut du footer-->
+
+<footer>
+  <div class="container">
+    <div class="row">
+
+        <!-- Première partie du footer -> infos contact -->
+        <div class=" col-xs-6 col-md-4  footer-col">
+            <div class="logofooter"> Contact</div>
+            <p><i class="fa fa-envelope"></i> E-mail : @.com</p>
+            <p><i class="fa fa-envelope"></i> Téléphone : 09 09 09 09 09 </p>
+        </div> <!-- /.footer-col -->
+
+        <!-- Deuxième partie du footer -> liens utiles -->
+        <div class=" col-xs-6 col-md-4  footer-col">
+            <h6 class="heading7">LIENS UTILES</h6>
+            <ul class="footer-ul">
+              <li><a href="#">A propos</a></li>
+              <li><a href="#"> Avantages premium</a></li>
+              <li><a href="#"> Termes & Conditions</a></li>
+          </ul> <!-- /.footer-ul -->
+      </div> <!-- /.footer-col -->
+
+      <!-- Troisième  partie du footer -> réseaux sociaux -->
+      <div class=" hidden-xs col-md-4  footer-col">
+        <h6 class="heading7">Réseaux sociaux</h6>
+        <ul class="footer-social">
+
+        <!-- icônes réseaux sociaux -->
+          <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+      </ul>
+  </div> <!-- /.footer-col -->
+
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+</footer> <!-- /.footer -->
+
+
+
+          <!--Deuxième footer-->
+
+<div class="copyright">
+  <div class="container">
+    <div class=" col-xs-6 col-md-6">
+      <p>2017</p>
+    </div>
+    <div class=" col-xs-6 col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#">Wolfo</a></li>
+          <li><a href="#">Webforce 3</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    </div>
+  </section>
+
+</div> <!-- /.container -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -24,6 +24,11 @@ img {
 
 }
 
+h3{
+  margin-top: -74px;
+}
+
+
 
 .carousel-caption {
     left: 20%;
@@ -227,6 +232,20 @@ textarea:focus {
 
 }
 
+
+
+.section6{
+  background-color: coral;
+}
+
+.section5 h2{
+ color: coral;
+ margin-bottom: 9px;
+}
+
+.section6 h2{
+  color: white;
+}
 /*----*/
 
 footer li{
@@ -252,6 +271,16 @@ footer li{
   font-size: 28px;
   display: inline-block;
 }
+
+
+.heading-sections h2 {
+  font-size: 28px;
+  display: inline-block;
+  margin-bottom: 439px;
+    text-transform: uppercase;
+}
+
+
 
 .heading-section5 h2 {
   font-size: 28px;
@@ -590,6 +619,15 @@ footer { background-color:white; min-height:210px; font-family: 'Open Sans', san
      background-color:#f63e28;
  }
 
+
+button:hover {
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+  box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+    
+    
 
 
 
