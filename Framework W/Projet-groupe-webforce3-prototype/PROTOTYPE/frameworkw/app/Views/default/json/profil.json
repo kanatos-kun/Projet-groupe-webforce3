@@ -1,0 +1,55 @@
+{
+			"css" : [
+
+													{
+										"link" : "absolute",
+										"url" : "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+									},
+						            {
+										"link" : "absolute",
+										"url" :"http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+									},
+									{
+										"link" : "relative",
+										"url" : "KREVISS/css/bootstrap.css"
+									},
+
+									{
+										"link" : "relative",
+										"url" : "KREVISS/css/main.css"
+									}
+
+
+					],
+			"js"  : [
+									{
+										"link" : "relative",
+										"url" : "KREVISS/js/jquery-3.2.1.js"
+									},
+
+									{
+										"link" : "relative",
+										"url" : "KREVISS/js/bootstrap.js"
+									}
+
+					],
+			"img" : {
+							"profile-picture" : "KREVISS/img/profilepic.png"
+																	,
+							"contacts" : [
+																	"KREVISS/img/p1.jpg",
+																	"KREVISS/img/p2.jpg",
+																	"KREVISS/img/p3.jpg",
+																	"KREVISS/img/p4.jpg",
+																	"KREVISS/img/p5.jpg",
+																	"KREVISS/img/p6.jpg",
+																	"KREVISS/img/p7.jpg",
+																	"KREVISS/img/p8.jpg",
+																	"KREVISS/img/p9.jpg",
+																	"KREVISS/img/p10.jpg",
+																	"KREVISS/img/p11.jpg",
+																	"KREVISS/img/p12.jpg"
+																	
+															 ]
+					}
+}
